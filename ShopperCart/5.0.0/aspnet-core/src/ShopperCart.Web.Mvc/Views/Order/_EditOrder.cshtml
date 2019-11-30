@@ -1,0 +1,83 @@
+﻿@model ShopperCart.Web.Models.Order.OrderLineViewModel
+
+<div class="panel-body">
+    <ul class="list-group">
+        <a class="list-group-item">
+            <p id="orderid @Model.Id" hidden>@Model.OrderId</p>
+            <p id="productid @Model.Id" hidden>@Model.ProductId</p>
+            <p id="productName @Model.Id" hidden>@Model.Products.Name</p>
+            <p id="description @Model.Id" hidden>@Model.Products.Description</p>
+            <p id="unitprice @Model.Id" hidden>@Model.UnitPrice</p>
+            <p id="quantity @Model.Id" hidden>@Model.Quantity</p>
+
+            <div class="bmd-list-group-col">
+                <p class="list-group-item-heading">Product Name: @Model.Products.Name</p>
+                <br />
+                <p class="mb-1">Description: @Model.Products.Description</p>
+                <div class="pull-right">
+                    @{
+                        if (Model.Orders.Status == 0)
+                        {
+                            <input type="button" class="btn btn-danger btm-sm right margin-left" id="DeleteBtn @Model.Id" onclick="DeleteOrderItem(@Model.Id)" value="Delete">
+                            <input type="button" class="btn btn-warning btm-sm right" id="EditBtn @Model.Id" data-target="#createOrderModal" data-toggle="modal" onclick="EditOrders(@Model.Id)" value="Edit">
+                        }
+                    }
+                </div>
+                <p id="updatedQuantity @Model.Id">Quantity: @Model.Quantity</p>
+                <p>Unit Price: @Model.UnitPrice</p>
+                <span id="updateTotalAmount @Model.Id" class="badge badge-success">Total Amount: Rs: @(Model.UnitPrice * Model.Quantity)</span>
+            </div>
+        </a>
+    </ul>
+</div>
+
+<div class="modal fade" id="createOrderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Editing Order</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="container-fluid">
+                <form method="post">
+                    <div class="form-row">
+                        <div class="col">
+                            <label class="small font-weight-bold" for="Name">Product Name: </label>
+                            <input type="text" class="form-control" name="Name" id="Name" disabled value="" placeholder="eg: Orange">
+                            <input type="text" id="orderId" hidden />
+                            <input type="text" id="id" hidden />
+                            <input type="text" id="productid" hidden />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-row">
+                        <div class="col">
+                            <label class="small font-weight-bold" for="description">Description:</label>
+                            <textarea class="form-control" placeholder="Give a description about the product" disabled name="Description" id="description" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label class="small font-weight-bold" for="UnitPrice">Unit Price:</label>
+                            <input type="number" class="form-control" placeholder="eg: 12.00" disabled name="UnitPrice" id="UnitPrice">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="small font-weight-bold" for="Quantity">Quantity:</label>
+                            <input type="number" class="form-control" placeholder="eg: 10" name="Quantity" id="Quantity">
+                        </div>
+                        <br />
+                    </div>
+                    <br />
+                    <div class="modal-footer">
+                        <br />
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" onclick="ConfirmOrderChanges()" data-dismiss="modal">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

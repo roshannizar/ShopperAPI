@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Product";
+}
+
+<h4>Product</h4>
+<button class="btn btn-primary btn-sm">New Product</button>
+<br /><br />
+
+    @foreach (var product in Model)
+    {
+        <div class="card margin border-color-strip" style="width: 18rem;">
+            <div class="card-body">
+                <label class="card-title font-weight-bold">@product.Name</label>
+                <span class="badge badge-secondary right">Quantity: @product.Quantity</span>
+                <hr />
+                <label class="small">Description:</label>
+                <p class="card-text">@product.Description</p>
+                <hr />
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-info btn-sm">More</button>
+                    <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#exampleModalCenter" asp-route-orderLineId="@product.Name">Edit</a>
+                    <button type="button" class="btn btn-danger btn-sm">Remove</button>
+                </div>
+            </div>
+        </div>
+    }

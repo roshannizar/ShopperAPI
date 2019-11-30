@@ -1,0 +1,29 @@
+﻿@model ShopperCart.Web.Models.Order.OrderViewModel
+
+<div class="card margin border-color-strip" style="width: 18rem;">
+    <div class="card-body">
+        <label class="card-title font-weight-bold">Ref No: @Model.Id</label>
+        @{ if (Model.Status == 0)
+            {
+                <span class="badge label-warning right">Status: @Model.Status</span>
+            }
+            else
+            {
+                <span class="badge label-success right">Status: @Model.Status</span>
+            }
+        }
+        <hr />
+        <label class="small">Customer Name:</label>
+        <p class="card-text font-weight-bold">@Model.Customers.FirstName @Model.Customers.LastName</p>
+        <label class="small">Date:</label>
+        <p class="card-text font-weight-bold">@Model.Date</p>
+        <span class="badge badge-info">Total Item(s) Inside: @Model.OrderItems.Count</span>
+        <hr />
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <a class="btn btn-info btn-sm" asp-controller="Order" asp-action="OrderDetail" asp-route-id="@Model.Id">More</a>
+            <form method="post" asp-controller="Order" asp-action="OrderDelete" asp-route-id="@Model.Id">
+                <input type="submit" class="btn btn-danger btn-sm" value="Remove" />
+            </form>
+        </div>
+    </div>
+</div>

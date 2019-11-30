@@ -1,0 +1,48 @@
+﻿@model IEnumerable<ShopperCart.Web.Models.Customer.CustomerViewModel>
+@{
+    ViewData["Title"] = "Customer";
+}
+
+<h2>Customer</h2>
+<a asp-controller="Order" asp-action="OrderItems" class="btn btn-primary btn-sm">New Order</a>
+<br />
+<br />
+@{
+    <div class="body table-responsive">
+        <table class="table">
+            <thead class="nestable-dark-theme">
+                <tr>
+                    <th>Order Ref No</th>
+                    <th>Customer Name</th>
+                    <th>Email Address</th>
+                    <th>Controls</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var customer in Model)
+                {
+                    <tr>
+                        <td>REF NO: @customer.Id</td>
+                        <td>@customer.FirstName @customer.LastName</td>
+                        <td>@customer.Email</td>
+                        <td class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">menu</i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a class="waves-effect waves-block edit-tenant" ><i class="material-icons">edit</i>@L("Edit")</a></li>
+                                <li>
+                                    <form method="post">
+                                        <input type="submit" class="btn btn-secondary waves-effect waves-block delete-tenant glyphicon glyphicon-trash" value="Remove" />
+                                    </form>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <br /><br />
+    </div>
+}
+

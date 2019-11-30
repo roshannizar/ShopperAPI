@@ -1,0 +1,36 @@
+﻿@model ShopperCart.Web.Models.Order.OrderViewModel
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>Order Detail</h4>
+    </div>
+    <div class="panel-body">
+        <div class="form-group">
+            <div class="col-md-3">
+                <label class="small font-weight-bold">Order Id</label>
+                <input type="text" class="form-control form-control-sm" value="@Model.Id" disabled />
+            </div>
+            <div class="col-md-3">
+                <label class="small font-weight-bold">Customer Name: </label>
+                <input type="text" class="form-control form-control-sm" value="@Model.Customers.FirstName @Model.Customers.LastName" disabled />
+            </div>
+            <div class="col-md-3">
+                <label class="small font-weight-bold">Date: </label>
+                <input type="text" class="form-control form-control-sm" value="@Model.Date" disabled />
+            </div>
+            <div class="col-md-3">
+                <label class="small font-weight-bold">Status: </label>
+                <br />
+                @if (Model.Status == 0)
+                {
+                    <span class="badge label-warning">@Model.Status</span>
+                }
+                else
+                {
+                    <span class="badge label-success">@Model.Status</span>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

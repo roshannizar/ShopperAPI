@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "OrderDetail";
+}
+<h3>Order</h3>
+<a class="btn btn-outline-secondary btn-sm" asp-controller="Order" asp-action="Index">Back</a>
+<a href="" class="btn btn-outline-danger btn-sm">Delete</a>
+<button class="btn btn-primary btn-sm" id="SaveChanges" onclick="Confirm()" hidden>Save Changes</button>
+<br />
+<br />
+
+<partial name="_OrderDetailCollapse" model="Model" />
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>Order Items</h4>
+    </div>
+    @foreach (var items in Model.OrderItems)
+    {
+        <partial name="_EditOrder" model="@items" />
+    }
+</div>
+
+<script src="~/view-resources/Views/Order/edit-order.js"></script>
