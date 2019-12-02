@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ShopperCart.Product
 {
@@ -11,6 +12,6 @@ namespace ShopperCart.Product
         IEnumerable<ProductDto> GetProducts();
         ProductDto GetProduct(int id);
         void Create(ProductDto product);
-        void Update(int productId, int quantity);
+        Task Update(int productId, int quantity);
     }
 }

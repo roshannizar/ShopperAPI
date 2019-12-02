@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using AutoMapper;
@@ -64,7 +65,7 @@ namespace ShopperCart.Product
             return query;
         }
 
-        public void Update(int productId, int quantity)
+        public async Task Update(int productId, int quantity)
         {
             try
             {
@@ -80,8 +81,8 @@ namespace ShopperCart.Product
                 }
 
                 var product = mapper.Map<Models.Product>(productBO);
-                repository.Update(product);
-                unitOfWork.SaveChanges();
+                await repository.UpdateAsync(product);
+                await unitOfWork.SaveChangesAsync();
             }
             catch (Exception ex)
             {

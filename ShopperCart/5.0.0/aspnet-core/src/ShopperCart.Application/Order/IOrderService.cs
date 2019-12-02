@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ShopperCart.Order
 {
@@ -10,8 +11,8 @@ namespace ShopperCart.Order
     {
         IEnumerable<OrderDto> GetOrders();
         OrderDto GetOrderById(int id);
-        void CreateOrder(OrderDto order);
-        void UpdateOrder(List<OrderLineDto> orderLineBOs);
-        void DeleteOrder(int id);
+        Task CreateOrder(OrderDto order);
+        Task UpdateOrder(List<OrderLineDto> orderLineBOs);
+        Task DeleteOrder(int id);
     }
 }

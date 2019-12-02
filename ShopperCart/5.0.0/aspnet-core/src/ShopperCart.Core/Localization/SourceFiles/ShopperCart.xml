@@ -2,6 +2,9 @@
 <localizationDictionary culture="en">
   <texts>
     <text name="HomePage" value="Home page" />
+    <text name="Orders" value="Order"/>
+    <text name="Products" value="Produccts"/>
+    <text name="Customers" value="Customers"/>
     <text name="About" value="About" />
     <text name="WelcomeMessage" value="Welcome to ShopperCart!" />
     <text name="FormIsNotValidMessage" value="Form is not valid. Please check and fix errors." />

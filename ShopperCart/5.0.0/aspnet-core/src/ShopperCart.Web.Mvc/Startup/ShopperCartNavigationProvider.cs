@@ -23,7 +23,7 @@ namespace ShopperCart.Web.Startup
                 ).AddItem(
                     new MenuItemDefinition(
                         PageNames.Product,
-                        L("Product"),
+                        L("Products"),
                         url: "Product",
                         icon: "store",
                         requiredPermissionName: PermissionNames.Pages_Products
@@ -32,7 +32,7 @@ namespace ShopperCart.Web.Startup
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.Order,
-                        L("Order"),
+                        L("Orders"),
                         url: "Order",
                         icon: "shopping_basket"
                     )
@@ -40,7 +40,7 @@ namespace ShopperCart.Web.Startup
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.Order,
-                        L("Customer"),
+                        L("Customers"),
                         url: "Customer",
                         icon: "supervisor_account"
                     )

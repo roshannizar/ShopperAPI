@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using AutoMapper;
@@ -29,21 +30,21 @@ namespace ShopperCart.Order
             productService = new ProductService(productRepository, mapper, unitOfWork);
         }
 
-        public void CreateOrder(OrderDto orderDto)
+        public async Task CreateOrder(OrderDto orderDto)
         {
             try
             {
                 foreach (var item in orderDto.OrderItems)
                 {
                     //Updating the product
-                    productService.Update(item.ProductId, -(item.Quantity));
+                    await productService.Update(item.ProductId, -(item.Quantity));
                 }
 
                 OrderDto orderDtoTemp = new OrderDto(orderDto.CustomerId, orderDto.Date, orderDto.OrderItems, orderDto.Status);
                 var order = mapper.Map<Models.Order>(orderDtoTemp);
                 //This method will add orderlines as well, since this entity has the orderline list
-                orderRepository.Insert(order);
-                unitOfWork.SaveChanges();
+                await orderRepository.InsertAsync(order);
+                await unitOfWork.SaveChangesAsync();
             }
             catch (OrderNotFoundException ex)
             {
@@ -51,11 +52,11 @@ namespace ShopperCart.Order
             }
         }
 
-        public void DeleteOrder(int id)
+        public async Task DeleteOrder(int id)
         {
             try
             {
-                var orderDto = orderRepository.Get(id);
+                var orderDto = await orderRepository.GetAsync(id);
 
                 if (orderDto == null)
                     throw new OrderNotFoundException();
@@ -65,7 +66,7 @@ namespace ShopperCart.Order
                 if (order.Status == Models.StatusType.Completed)
                 {
                     //product quantity will not be update if the status is confirmed
-                    orderRepository.Delete(order);
+                    await orderRepository.DeleteAsync(order);
                 }
                 else
                 {
@@ -75,13 +76,13 @@ namespace ShopperCart.Order
                     foreach (var temp in orderBOTemp.OrderItems)
                     {
                         //updates the quantity
-                        productService.Update(temp.ProductId, temp.Quantity);
+                        await productService.Update(temp.ProductId, temp.Quantity);
                     }
 
-                    orderRepository.Delete(order);
+                    await orderRepository.DeleteAsync(order);
                 }
                 //Records will be saved after checking the status type
-                unitOfWork.SaveChanges();
+                await unitOfWork.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -89,7 +90,7 @@ namespace ShopperCart.Order
             }
         }
 
-        public void UpdateOrder(List<OrderLineDto> orderLineBOs)
+        public async Task UpdateOrder(List<OrderLineDto> orderLineBOs)
         {
             try
             {
@@ -108,18 +109,18 @@ namespace ShopperCart.Order
                     if (item.Quantity == 0)
                     {
                         //If the quantity is zero the order item is deleted
-                        DeleteOrderLine(tempOrderLine);
+                        await DeleteOrderLine(tempOrderLine);
                     }
                     else
                     {
                         //updates the orderline
                         var order = mapper.Map<Models.OrderLine>(tempOrderLine);
-                        orderItemRepository.Update(order);
-                        unitOfWork.SaveChanges();
+                        await orderItemRepository.UpdateAsync(order);
+                        await unitOfWork.SaveChangesAsync();
                     }
 
                     //updates the difference quantity
-                    productService.Update(item.ProductId, tempDifference);
+                    await productService.Update(item.ProductId, tempDifference);
                 }
             }
             catch (Exception ex)
@@ -128,12 +129,12 @@ namespace ShopperCart.Order
             }
         }
 
-        private void DeleteOrderLine(Models.OrderLine orderLine)
+        private async Task DeleteOrderLine(Models.OrderLine orderLine)
         {
             if (orderLine == null)
                 throw new OrderLineNotFoundException();
-            orderItemRepository.Delete(orderLine);
-            unitOfWork.SaveChanges();
+            await orderItemRepository.DeleteAsync(orderLine);
+            await unitOfWork.SaveChangesAsync();
         }
 
         public OrderDto GetOrderById(int id)
