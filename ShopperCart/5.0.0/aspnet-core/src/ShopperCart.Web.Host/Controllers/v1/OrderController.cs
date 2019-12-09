@@ -42,6 +42,15 @@ namespace Shopper.Web.Host.Controllers.v1
             return model;
         }
 
+        // GET: api/v1/order/9
+        [HttpGet("{id}")]
+        public OrderViewModel Get(int id)
+        {
+            var query = orderService.GetOrderById(id);
+            var model = mapper.Map<OrderViewModel>(query);
+            return model;
+        }
+
         // POST: api/v1/Order
         [HttpPost]
         public async Task<ActionResult<OrderViewModel>> Post([FromBody] OrderViewModel orderViewModel)
@@ -59,7 +68,7 @@ namespace Shopper.Web.Host.Controllers.v1
             }
         }
 
-        // PUT: api/v1/Order
+        // PUT: api/v1/Order/9
         [HttpPut("{id}")]
         public async Task<ActionResult<OrderViewModel>> Put([FromBody]OrderViewModel orderViewModel)
         {
