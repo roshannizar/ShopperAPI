@@ -42,6 +42,7 @@ namespace Shopper.Web.Host.Controllers.v1
             return model;
         }
 
+        // POST: api/v1/Order
         [HttpPost]
         public async Task<ActionResult<OrderViewModel>> Post([FromBody] OrderViewModel orderViewModel)
         {
@@ -55,6 +56,47 @@ namespace Shopper.Web.Host.Controllers.v1
             else
             {
                 return BadRequest("Field's were not matching, you are missing something!");
+            }
+        }
+
+        // PUT: api/v1/Order
+        [HttpPut("{id}")]
+        public async Task<ActionResult<OrderViewModel>> Put([FromBody]OrderViewModel orderViewModel)
+        {
+            if(orderViewModel == null)
+            {
+                return BadRequest("Order is not present");
+            }
+
+            try
+            {
+                var order = mapper.Map<OrderDto>(orderViewModel);
+                await orderService.UpdateOrder(order);
+                return Ok("Order Update Successfully");
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        //DELETE: api/v1/Order/9
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<OrderViewModel>> Delete(int id)
+        {
+            if(id == 0)
+            {
+                return BadRequest("Id is not present");
+            }
+
+            try
+            {
+                await orderService.DeleteOrder(id);
+                return Ok("Order deleted successfully");
+            }
+            catch(Exception ex)
+            {
+                throw ex;
             }
         }
     }

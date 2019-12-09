@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ShopperCart.Order.Dto;
 using ShopperCart.Product;
 
 namespace ShopperCart.Order
 {
+
     public class OrderService : IOrderService
     {
         private readonly IRepository<Models.Order> orderRepository;
@@ -94,47 +96,43 @@ namespace ShopperCart.Order
         {
             try
             {
+                var orderTemp = orderRepository.GetAllIncluding().Include(i => i.OrderItems).First(o => o.Id == orderBO.Id);
 
-                foreach (var item in orderLineBOs)
+                var order = mapper.Map<Models.Order>(orderBO);
+
+                foreach (var item in order.OrderItems.ToList())
                 {
-                    //Retrieving the orderline as temporary to check the database quantity
-                    var tempOrderLine = orderItemRepository.Get(item.Id);
-
-                    //Identifying the difference between the updated orderline and database quantity
-                    var tempDifference = tempOrderLine.Quantity - item.Quantity;
-
-                    //setting the quantity
-                    tempOrderLine.Quantity = item.Quantity;
-
-                    if (item.Quantity == 0)
+                    if (item.Id != 0)
                     {
-                        //If the quantity is zero the order item is deleted
-                        await DeleteOrderLine(tempOrderLine);
+                        var orderItemQuantity = orderTemp.OrderItems.FirstOrDefault(o => o.Id == item.Id).Quantity;
+                        var difference = orderItemQuantity - item.Quantity;
+                        orderTemp.OrderItems.FirstOrDefault(o => o.Id == item.Id).Quantity = item.Quantity;
+
+                        if (item.IsDeleted)
+                        {
+                            //Remove the orderline
+                            var orderItem = orderTemp.OrderItems.FirstOrDefault(o => o.Id == item.Id);
+                            orderTemp.OrderItems.Remove(orderItem);
+                        }
+
+                        //updates the difference quantity
+                        productService.Update(item.ProductId, difference);
                     }
                     else
                     {
-                        //updates the orderline
-                        var order = mapper.Map<Models.OrderLine>(tempOrderLine);
-                        await orderItemRepository.UpdateAsync(order);
-                        await unitOfWork.SaveChangesAsync();
+                        productService.Update(item.ProductId, item.Quantity);
+                        orderTemp.OrderItems.Add(item);
                     }
 
-                    //updates the difference quantity
-                    await productService.Update(item.ProductId, tempDifference);
+                    //updates the order
+                    orderRepository.Update(orderTemp);
+                    unitOfWork.SaveChanges();
                 }
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-        }
-
-        private async Task DeleteOrderLine(Models.OrderLine orderLine)
-        {
-            if (orderLine == null)
-                throw new OrderLineNotFoundException();
-            await orderItemRepository.DeleteAsync(orderLine);
-            await unitOfWork.SaveChangesAsync();
         }
 
         public OrderDto GetOrderById(int id)
