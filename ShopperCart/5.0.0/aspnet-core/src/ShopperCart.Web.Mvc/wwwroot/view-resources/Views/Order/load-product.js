@@ -1,33 +1,47 @@
-﻿function LoadProducts(id) {
+﻿function LoadProducts(id, type) {
     var http = new XMLHttpRequest();
 
-    http.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
+    if (!(id === "-- Please choose a product --")) {
 
-            var obj = JSON.parse(this.responseText);
+        http.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
 
-            var resultObject = obj.result;
+                var obj = JSON.parse(this.responseText);
 
-            if (resultObject != undefined || resultObject != null) {
+                var resultObject = obj.result;
 
-                document.getElementById("hiddenQuantity").hidden = false;
-                document.getElementById("description").innerHTML = resultObject.description;
-                document.getElementById("unitprice").innerHTML = resultObject.unitPrice;
-                document.getElementById("quantity").disabled = false;
-                document.getElementById("quantityInStock").innerHTML = resultObject.quantity;
+                if (resultObject != undefined || resultObject != null) {
 
-            } else {
+                    if (type === "NewOrder") {
+                        document.getElementById("hiddenQuantity").hidden = false;
+                        document.getElementById("description").innerHTML = resultObject.description;
+                        document.getElementById("unitprice").innerHTML = resultObject.unitPrice;
+                        document.getElementById("quantity").disabled = false;
+                        document.getElementById("quantityInStock").innerHTML = resultObject.quantity;
 
-                document.getElementById("description").innerHTML = "Product not found!";
-                document.getElementById("unitprice").innerHTML = "Product not found!";
-                document.getElementById("hiddenQuantity").hidden = true;
-                console.log("No product found!");
+                    }
+                    else {
+                        document.getElementById("descriptionText").value = resultObject.description;
+                        document.getElementById("UnitPriceText").value = parseInt(resultObject.unitPrice);
+                    }
 
+                } else {
+
+                    document.getElementById("description").innerHTML = "Product not found!";
+                    document.getElementById("unitprice").innerHTML = "Product not found!";
+                    document.getElementById("hiddenQuantity").hidden = true;
+                    console.log("No product found!");
+
+                }
             }
+        };
+
+        if (type === "NewOrder") {
+            http.open("GET", "../product/GetProductById/" + parseInt(id), true);
         }
-    };
-
-    http.open("GET", "../product/GetProductById/" + parseInt(id), true);
-    http.send();
-
-}
+        else {
+            http.open("GET", "../../product/GetProductById/" + parseInt(id), true);
+        }
+        http.send();
+    }
+} 
