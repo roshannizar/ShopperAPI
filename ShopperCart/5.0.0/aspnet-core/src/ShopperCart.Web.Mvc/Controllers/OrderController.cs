@@ -115,21 +115,21 @@ namespace ShopperCart.Web.Mvc.Controllers
         }
 
         [HttpPost]
-        public IActionResult OrderEdit([FromBody]List<OrderLineViewModel> orderItemsViewModel)
+        public IActionResult OrderEdit([FromBody]OrderViewModel orderViewModel)
         {
             try
             {
                 if (!ModelState.IsValid)
                     return View("OrderEdit");
 
-                if (!(orderItemsViewModel.Count > 0))
+                if (!(orderViewModel.OrderItems.Count > 0))
                     return RedirectToAction("Index");
 
-                var order = ObjectMapper.Map<List<OrderLineDto>>(orderItemsViewModel);
+                var order = ObjectMapper.Map<OrderDto>(orderViewModel);
                 orderService.UpdateOrder(order);
 
                 TempData["Message"] = "Save changes made for order Ref No: " +
-                    orderItemsViewModel[0].OrderId + " successfully!";
+                    order.OrderItems[0].OrderId + " successfully!";
                 return RedirectToAction("Index", "Order");
 
             }
