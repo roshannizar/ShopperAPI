@@ -23,36 +23,36 @@
             <tbody>
                 @foreach (var order in Model)
                 {
-                <tr>
-                    <td>REF NO: @order.Id</td>
-                    <td>@order.Customers.FirstName @order.Customers.LastName</td>
-                    <td>@order.Date</td>
-                    <td><span class="badge label-primary">@order.OrderItems.Count Item(s) Inside</span></td>
-                    @{
-                        if (order.Status == 0)
-                        {
-                            <td><span class="badge label-warning">@order.Status</span></td>
-                        }
-                        else
-                        {
-                            <td><span class="badge label-success">@order.Status</span></td>
-                        }
+                    <tr>
+                        <td>REF NO: @order.Id</td>
+                        <td>@order.Customers.FirstName @order.Customers.LastName</td>
+                        <td>@order.Date</td>
+                        <td><span class="badge label-primary">@order.OrderItems.Count Item(s) Inside</span></td>
+                        @{
+                            if (order.Status == 0)
+                            {
+                                <td><span class="badge label-warning">@order.Status</span></td>
+                            }
+                            else
+                            {
+                                <td><span class="badge label-success">@order.Status</span></td>
+                            }
 
-                    }
-                    <td class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">menu</i>
-                        </a>
-                        <ul class="dropdown-menu pull-right">
-                            <li><a class="waves-effect waves-block edit-tenant" asp-controller="Order" asp-action="OrderDetail" asp-route-Id="@order.Id"><i class="material-icons">edit</i>@L("Edit")</a></li>
-                            <li>
-                                <form method="post" asp-controller="Order" asp-action="OrderDelete" asp-route-Id="@order.Id">
-                                    <input type="submit" class="btn btn-secondary waves-effect waves-block delete-tenant glyphicon glyphicon-trash" value="Remove" />
-                                </form>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
+                        }
+                        <td class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">menu</i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a class="waves-effect waves-block edit-tenant" asp-controller="Order" asp-action="ShowOrder" asp-route-Id="@order.Id"><i class="material-icons">edit</i>@L("Edit")</a></li>
+                                <li>
+                                    <form method="post" asp-controller="Order" asp-action="RemoveOrder" asp-route-Id="@order.Id">
+                                        <input type="submit" class="btn btn-secondary waves-effect waves-block delete-tenant glyphicon glyphicon-trash" value="Remove" />
+                                    </form>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
                 }
             </tbody>
         </table>

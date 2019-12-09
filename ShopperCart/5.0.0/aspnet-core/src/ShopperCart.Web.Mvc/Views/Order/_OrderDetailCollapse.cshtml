@@ -2,15 +2,16 @@
 
 <div class="panel panel-default">
     <div class="panel-heading">
-        <h4>Order Detail</h4>
+        <h4>Order</h4>
     </div>
     <div class="panel-body">
         <div class="form-group">
             <div class="col-md-3">
                 <label class="small font-weight-bold">Order Id</label>
-                <input type="text" class="form-control form-control-sm" value="@Model.Id" disabled />
+                <input type="text" class="form-control form-control-sm" id="orderIdTemp" value="@Model.Id" disabled />
             </div>
             <div class="col-md-3">
+                <p id="customerId" hidden>@Model.CustomerId</p>
                 <label class="small font-weight-bold">Customer Name: </label>
                 <input type="text" class="form-control form-control-sm" value="@Model.Customers.FirstName @Model.Customers.LastName" disabled />
             </div>
@@ -18,6 +19,7 @@
                 <label class="small font-weight-bold">Date: </label>
                 <input type="text" class="form-control form-control-sm" value="@Model.Date" disabled />
             </div>
+            <p id="orderItemCount" hidden>@Model.OrderItems.Count</p>
             <div class="col-md-3">
                 <label class="small font-weight-bold">Status: </label>
                 <br />
