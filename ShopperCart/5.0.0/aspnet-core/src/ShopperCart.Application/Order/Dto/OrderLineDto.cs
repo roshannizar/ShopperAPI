@@ -22,5 +22,6 @@ namespace ShopperCart.Order.Dto
         public int Quantity { get; set; }
         [Required]
         public double UnitPrice { get; set; }
+        public bool IsDelete { get; set; }
     }
 }

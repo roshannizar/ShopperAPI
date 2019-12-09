@@ -15,5 +15,6 @@ namespace ShopperCart.Web.Models.Order
         public int OrderId { get; set; }
         public OrderViewModel Orders { get; set; }
         public ProductViewModel Products { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }
