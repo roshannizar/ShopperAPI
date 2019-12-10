@@ -126,9 +126,9 @@ function Confirm() {
     order.Date = currentDate.replace(/^"(.*)"$/, '$1');
 
     $.ajax({
-        url: '../UpdateOrder',
+        url: 'http://localhost:21021/api/v1/Order',
         dataType: 'json',
-        type: 'post',
+        type: 'put',
         contentType: 'application/json',
         data: JSON.stringify(order),
         processData: false,
