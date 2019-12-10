@@ -1,4 +1,5 @@
-﻿using ShopperCart.Product.Dto;
+﻿using Abp.Application.Services;
+using ShopperCart.Product.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace ShopperCart.Product
     {
         IEnumerable<ProductDto> GetProducts();
         ProductDto GetProduct(int id);
-        void Create(ProductDto product);
+        Task Create(ProductDto product);
         Task Update(int productId, int quantity);
     }
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Abp.Application.Services;
+using Abp.Application.Services.Dto;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using AutoMapper;
@@ -14,7 +16,7 @@ using ShopperCart.Product;
 namespace ShopperCart.Order
 {
 
-    public class OrderService : IOrderService
+    public class OrderService: ShopperCartAppServiceBase, IOrderService
     {
         private readonly IRepository<Models.Order> orderRepository;
         private readonly IUnitOfWork unitOfWork;
@@ -92,13 +94,13 @@ namespace ShopperCart.Order
             }
         }
 
-        public async Task UpdateOrder(List<OrderLineDto> orderLineBOs)
+        public async Task UpdateOrder(OrderDto orderDto)
         {
             try
             {
-                var orderTemp = orderRepository.GetAllIncluding().Include(i => i.OrderItems).First(o => o.Id == orderBO.Id);
+                var orderTemp = orderRepository.GetAllIncluding().Include(i => i.OrderItems).First(o => o.Id == orderDto.Id);
 
-                var order = mapper.Map<Models.Order>(orderBO);
+                var order = mapper.Map<Models.Order>(orderDto);
 
                 foreach (var item in order.OrderItems.ToList())
                 {
@@ -116,17 +118,17 @@ namespace ShopperCart.Order
                         }
 
                         //updates the difference quantity
-                        productService.Update(item.ProductId, difference);
+                        await productService.Update(item.ProductId, difference);
                     }
                     else
                     {
-                        productService.Update(item.ProductId, item.Quantity);
+                        await productService.Update(item.ProductId, -(item.Quantity));
                         orderTemp.OrderItems.Add(item);
                     }
 
                     //updates the order
-                    orderRepository.Update(orderTemp);
-                    unitOfWork.SaveChanges();
+                    await orderRepository.UpdateAsync(orderTemp);
+                    await unitOfWork.SaveChangesAsync();
                 }
             }
             catch (Exception ex)
@@ -139,7 +141,8 @@ namespace ShopperCart.Order
         {
             try
             {
-                var orders = orderRepository.GetAllIncluding().Include(i => i.OrderItems).ThenInclude(i => i.Products).Include(i => i.Customers).FirstOrDefault(o => o.Id == id);
+                var orders = orderRepository.GetAllIncluding().Include(i => i.OrderItems).ThenInclude(i => i.Products)
+                            .Include(i => i.Customers).FirstOrDefault(o => o.Id == id);
                 var query = mapper.Map<OrderDto>(orders);
                 return query;
             }
@@ -153,11 +156,11 @@ namespace ShopperCart.Order
         {
             try
             {
-                var orders = orderRepository.GetAllIncluding(c => c.Customers, o => o.OrderItems).ToList();
-
+                var orders = orderRepository.GetAll().Include(i => i.OrderItems).ThenInclude(i => i.Products)
+                            .Include(i => i.Customers);
                 if (orders != null)
                 {
-                    var query = mapper.Map<IEnumerable<OrderDto>>(orders);
+                    var query = mapper.Map<IEnumerable<OrderDto>>(orders.ToList());
                     return query;
                 }
                 else

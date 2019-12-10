@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
+using Abp.Application.Services;
+using Abp.Application.Services.Dto;
 using Abp.Domain.Repositories;
 using AutoMapper;
 using ShopperCart.Customers.Dto;
 
 namespace ShopperCart.Customer
 {
-    public class CustomerService : ICustomerService
+    public class CustomerService : ShopperCartAppServiceBase, ICustomerService
     {
         private readonly IRepository<Models.Customer> repository;
         private readonly IMapper mapper;
