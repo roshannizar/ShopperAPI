@@ -18,6 +18,7 @@ using Abp.Dependency;
 using Abp.Json;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Serialization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ShopperCart.Web.Host.Startup
 {
@@ -41,15 +42,15 @@ namespace ShopperCart.Web.Host.Startup
                 {
                     options.Filters.Add(new AbpAutoValidateAntiforgeryTokenAttribute());
                 }
+
             ).AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ContractResolver = new AbpMvcContractResolver(IocManager.Instance)
                 {
                     NamingStrategy = new CamelCaseNamingStrategy()
                 };
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             });
-
-
 
             IdentityRegistrar.Register(services);
             AuthConfigurer.Configure(services, _appConfiguration);
