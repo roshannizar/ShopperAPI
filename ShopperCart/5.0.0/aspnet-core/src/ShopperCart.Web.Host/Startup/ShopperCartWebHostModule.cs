@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using ShopperCart.Configuration;
+using Abp.AutoMapper;
 
 namespace ShopperCart.Web.Host.Startup
 {
@@ -23,7 +24,9 @@ namespace ShopperCart.Web.Host.Startup
 
         public override void Initialize()
         {
-            IocManager.RegisterAssemblyByConvention(typeof(ShopperCartWebHostModule).GetAssembly());
+            var thisAssembly = typeof(ShopperCartWebHostModule).GetAssembly();
+
+            IocManager.RegisterAssemblyByConvention(thisAssembly);
         }
     }
 }

@@ -1,11 +1,11 @@
-﻿using Abp.Domain.Entities;
+﻿using Abp.Application.Services.Dto;
+using Abp.Domain.Entities;
 using System.ComponentModel.DataAnnotations;
 
 namespace ShopperCart.Customers.Dto
 {
-    public class CustomerDto
+    public class CustomerDto:EntityDto<int>
     {
-        public int Id {get; set;}
         [Required]
         [StringLength(50, ErrorMessage = "Reached the maximum limit")]
         public string FirstName { get; set; }

@@ -8,9 +8,8 @@ using System.Text;
 
 namespace ShopperCart.Order.Dto
 {
-    public class OrderLineDto
+    public class OrderLineDto:EntityDto<int>
     {
-        public int Id { get; set; }
         public int ProductId { get; set; }
         [ForeignKey("ProductId")]
         public virtual ProductDto Products { get; set; }
