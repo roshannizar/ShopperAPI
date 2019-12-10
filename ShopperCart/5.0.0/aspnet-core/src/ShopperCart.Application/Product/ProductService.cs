@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Abp.Application.Services;
+using Abp.Application.Services.Dto;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using AutoMapper;
@@ -11,7 +13,7 @@ using ShopperCart.Product.Dto;
 
 namespace ShopperCart.Product
 {
-    public class ProductService : IProductService
+    public class ProductService : ShopperCartAppServiceBase, IProductService
     {
         private readonly IRepository<Models.Product> repository;
         private readonly IMapper mapper;
@@ -24,22 +26,22 @@ namespace ShopperCart.Product
             this.unitOfWork = unitOfWork;
         }
 
-        public void Create(ProductDto productDto)
+        public async Task Create(ProductDto input)
         {
             try
             {
-                if (productDto != null)
+                if (input != null)
                 {
-                    var product = mapper.Map<Models.Product>(productDto);
-                    repository.Insert(product);
-                    unitOfWork.SaveChanges();
+                    var product = mapper.Map<Models.Product>(input);
+                    await repository.InsertAsync(product);
+                    await unitOfWork.SaveChangesAsync();
                 }
                 else
                 {
                     throw new ProductNotFoundException();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }
