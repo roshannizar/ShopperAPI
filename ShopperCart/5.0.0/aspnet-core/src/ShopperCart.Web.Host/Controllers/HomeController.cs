@@ -19,7 +19,7 @@ namespace ShopperCart.Web.Host.Controllers
 
         public IActionResult Index()
         {
-            return Redirect("/swagger");
+            return Redirect("/swagger/index.html");
         }
 
         /// <summary>

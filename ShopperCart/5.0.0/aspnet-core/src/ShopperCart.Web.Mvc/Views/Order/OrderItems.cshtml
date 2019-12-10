@@ -1,96 +1,89 @@
-﻿
-@{
-    ViewData["Title"] = "Order Details";
+﻿@{
+    ViewData["Title"] = "OrderItems";
 }
-<h3>Order Detail</h3>
-<label class="small">Ref No - @Model.Id</label>
-<br />
-<a class="btn btn-outline-secondary btn-sm" asp-controller="Order" asp-action="Index">View Orders</a>
-<a class="btn btn-danger btn-sm margin-left" asp-action="RemoveOrder" asp-controller="Order" asp-route-Id="@Model.Id">Delete Order</a>
-<button class="btn btn-danger btn-sm right margin-left" onclick="EraseChanges()" hidden>Cancel Changes</button>
-<button class="btn btn-primary btn-sm right" id="SaveChanges" onclick="Confirm()" hidden>Save Changes</button>
+
+<h3>Order Items</h3>
+<a class="btn btn-outline-primary btn-sm" asp-controller="Order" asp-action="Index">Back</a>
 <br />
 <br />
 
-<partial name="_OrderDetailCollapse" model="Model" />
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h4>Order Items</h4>
-    </div>
-    <br />
-    @{
-        if (Model.Status == 0)
-        {
-            <div class="container-fluid">
-                <button class="btn btn-primary btn-sm" id="linkBreaker" data-toggle="modal" data-target="#createNewOrderModal">Add New Item</button>
-            </div>
-        }
-    }
-    <div class="container-fluid">
-        <table id="tableForm" class="table"></table>
-    </div>
-    <div id="panel1">
-        @foreach (var items in Model.OrderItems)
-        {
-
-            <partial name="_EditOrder" model="@items" />
-        }
-    </div>
+<label>Customer Name: </label>
+<div class="customer-select">
+    <select class="form-control form-group-sm" id="customerId" asp-items="@ViewBag.CustomerList">
+        <option value="0">-- Please choose a customer --</option>
+    </select>
+</div>
+<br />
+<div>
+    <table class="table" id="tableForm">
+        <tr class="nestable-dark-theme">
+            <th>Product Name</th>
+            <th colspan="2">Description</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Total Amount</th>
+            <th>Controls</th>
+        </tr>
+        <tr>
+            <td>
+                <select class="form-control form-group-sm" id="productId" onchange="LoadProducts(this.value,'NewOrder')" asp-items="@ViewBag.ProductList">
+                    <option value="0">-- Please choose a product --</option>
+                </select>
+            </td>
+            <td colspan="2">
+                <p id="description">---------------</p>
+            </td>
+            <td>
+                <p id="unitprice">Rs: 0</p>
+            </td>
+            <td class="small-width">
+                <input type="number" disabled class="form-control form-group-sm" id="quantity" min="0" placeholder="Eg: 2" onchange="CalculateTotal(this.value)" />
+                <span id="hiddenQuantity" class="badge badge-secondary small" hidden>Quantity In Stock: <span id="quantityInStock">0</span></span>
+            </td>
+            <td>
+                <p id="totalamount">Rs: 0</p>
+            </td>
+            <td>
+                <button type="button" class="btn btn-outline-primary btn-sm" onclick="CreateOrderLine()" id="addItem">Add Item</button>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Grand Total</td>
+            <td>
+                <p id="grandtotal">Rs: 0</p>
+            </td>
+            <td>
+                <button class="btn btn-primary btn-sm" id="confirmOrder" data-toggle="modal" data-target="#confirmationBox">Confirm Order</button>
+            </td>
+        </tr>
+    </table>
 </div>
 
-<div class="modal fade" id="createNewOrderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="confirmationBox" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Adding New Order Item</h5>
+                <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">Order Placement Confirmation</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="container-fluid">
+            <div class="modal-body">
+                Are you sure you want to place order?
+            </div>
+            <div class="modal-footer">
                 <form method="post">
-                    <div class="form-row">
-                        <div class="col">
-                            <label class="small font-weight-bold" for="Name">Product Name: </label>
-                            <select class="form-control form-group-sm" id="productId" onchange="LoadProducts(this.value,'UpdateNewOrder')" asp-items="@ViewBag.ProductList">
-                                <option value="0">-- Please choose a product --</option>
-                            </select>
-                            <input type="text" id="orderId" hidden />
-                            <input type="text" id="id" hidden />
-                            <input type="text" id="productid" hidden />
-                        </div>
-                    </div>
-                    <br />
-                    <div class="form-row">
-                        <div class="col">
-                            <label class="small font-weight-bold" for="description">Description:</label>
-                            <textarea class="form-control" placeholder="Give a description about the product" disabled name="Description" id="descriptionText" rows="3"></textarea>
-                        </div>
-                    </div>
-                    <br />
-                    <div class="form-row">
-                        <div class="col-md-6">
-                            <label class="small font-weight-bold" for="UnitPrice">Unit Price:</label>
-                            <input type="number" class="form-control" placeholder="eg: 12.00" disabled name="UnitPrice" id="UnitPriceText">
-                        </div>
-                        <div class="col-md-6">
-                            <label class="small font-weight-bold" for="Quantity">Quantity:</label>
-                            <input type="number" class="form-control" placeholder="eg: 10" name="Quantity" id="QuantityText">
-                        </div>
-                        <br />
-                    </div>
-                    <br />
-                    <div class="modal-footer">
-                        <br />
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" onclick="PlaceNewOrder(@Model.Id)" data-dismiss="modal">Save changes</button>
-                    </div>
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal" onclick="ConfirmOrder()">Yes</button>
                 </form>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
             </div>
         </div>
     </div>
 </div>
 
-<script src="~/view-resources/Views/Order/edit-order.js"></script>
+<script src="~/view-resources/Views/Order/add-order-items.js"></script>
 <script src="~/view-resources/Views/Order/load-product.js"></script>

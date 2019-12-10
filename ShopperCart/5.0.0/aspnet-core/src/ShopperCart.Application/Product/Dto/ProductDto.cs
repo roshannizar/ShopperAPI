@@ -1,4 +1,5 @@
 ﻿using Abp.Application.Services.Dto;
+using Abp.AutoMapper;
 using Abp.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -7,9 +8,9 @@ using System.Text;
 
 namespace ShopperCart.Product.Dto
 {
-    public class ProductDto
+    [AutoMapFrom(typeof(Models.Product))]
+    public class ProductDto:EntityDto<int>
     {
-        public int Id { get; set; }
         [Required]
         [Display(Name = "Product Name")]
         [StringLength(50, ErrorMessage = "Name cannot be too long")]
