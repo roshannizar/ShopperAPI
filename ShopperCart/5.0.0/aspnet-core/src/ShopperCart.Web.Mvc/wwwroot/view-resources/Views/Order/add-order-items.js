@@ -103,7 +103,7 @@ function ConfirmOrder() {
         order.Date = currentDate.replace(/^"(.*)"$/, '$1');
 
         $.ajax({
-            url: 'http://localhost:21021/api/services/app/OrderService/CreateOrder',
+            url: 'http://localhost:21021/api/v1/Order',
             dataType: 'json',
             type: 'post',
             contentType: 'application/json',
@@ -111,6 +111,7 @@ function ConfirmOrder() {
             processData: false,
             success: function (data, textStatus, jQxhr) {
                 console.log(data, textStatus, jQxhr);
+                location.replace('https://localhost:62114/Order/Index');
             },
             error: function (jqXhr, textStatus, errorThrown) {
                 console.log(jqXhr, textStatus, errorThrown);
