@@ -19,12 +19,13 @@ using Abp.Json;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Serialization;
 using Microsoft.AspNetCore.Mvc;
+using ShopperCart.Order;
 
 namespace ShopperCart.Web.Host.Startup
 {
     public class Startup
     {
-        private const string _defaultCorsPolicyName = "localhost";
+        private const string _defaultCorsPolicyName = "http://localhost:21021";
 
         private readonly IConfigurationRoot _appConfiguration;
 
@@ -56,6 +57,7 @@ namespace ShopperCart.Web.Host.Startup
             AuthConfigurer.Configure(services, _appConfiguration);
 
             services.AddSignalR();
+            services.AddTransient<IOrderService, OrderService>();
 
             // Configure CORS for angular2 UI
             services.AddCors(
