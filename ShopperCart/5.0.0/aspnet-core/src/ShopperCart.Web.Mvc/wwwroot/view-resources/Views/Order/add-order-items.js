@@ -5,6 +5,7 @@ var rowCount = 2;
 var d = new Date();
 var temp = JSON.stringify(d);
 var currentDate = temp.replace(/^"(.*)"$/, '$1');
+const spinner = document.getElementById("spinner");
 
 function CalculateTotal(quantity) {
     var quantity = document.getElementById("quantity").value;
@@ -87,7 +88,19 @@ function CreateOrderLine() {
     }
 }
 
+function showSpinner() {
+    spinner.style.visibility = 'visible';
+    spinner.style.display = 'inline';
+    spinner.style.opacity = '0.5';
+}
+
+function closeSpinner() {
+    spinner.style.visibility = 'hidden';
+    spinner.style.display = 'none';
+}
+
 function ConfirmOrder() {
+    showSpinner();
     var customerId = document.getElementById("customerId").value;
     var date = new Date();
     var currentDate = JSON.stringify(date);
@@ -105,16 +118,18 @@ function ConfirmOrder() {
         $.ajax({
             url: 'http://localhost:21021/api/v1/Order',
             dataType: 'json',
-            type: 'post',
+            type: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(order),
             processData: false,
             success: function (data, textStatus, jQxhr) {
                 console.log(data, textStatus, jQxhr);
-                location.replace('https://localhost:62114/Order/Index');
+                closeSpinner();
+                location.replace('https://localhost:62114/Order/Get');
             },
             error: function (jqXhr, textStatus, errorThrown) {
                 console.log(jqXhr, textStatus, errorThrown);
+                closeSpinner();
             }
         });
 
