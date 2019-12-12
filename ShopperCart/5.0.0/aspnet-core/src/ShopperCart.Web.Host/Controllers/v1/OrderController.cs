@@ -20,17 +20,54 @@ namespace ShopperCart.Web.Host.Controllers.v1
         private readonly IOrderService orderService;
         private readonly IMapper mapper;
 
-        public OrderController(IOrderService orderService,IMapper mapper)
+        public OrderController(IOrderService orderService, IMapper mapper)
         {
             this.orderService = orderService;
             this.mapper = mapper;
         }
 
+        // GET: api/v1/Order
         [HttpGet]
-        public IEnumerable<OrderViewModel> Get()
+        public JsonResult Get()
         {
             var orders = orderService.GetOrders();
-            return mapper.Map<IEnumerable<OrderViewModel>>(orders);
+
+            if(orders != null)
+            {
+                var query = mapper.Map<IEnumerable<OrderViewModel>>(orders);
+                return Json(query);
+            } 
+            else
+            {
+                return Json("Order not found!");
+            }
+        }
+
+        // GET: api/v1/Order/9
+        [HttpGet("{id}")]
+        public JsonResult ShowOrder(int id)
+        {
+            try
+            {
+                //Loads the orders
+                var ordersBO = orderService.GetOrderById(id);
+
+                //checks whether the order is null or has value
+                if (ordersBO == null)
+                {
+                    return Json("Order not found!");
+                }
+                else
+                {
+                    var model = ObjectMapper.Map<OrderViewModel>(ordersBO);
+                    return Json(model);
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = "No Order found! " + ex;
+                throw ex;
+            }
         }
 
         // POST: api/v1/Order
@@ -54,7 +91,8 @@ namespace ShopperCart.Web.Host.Controllers.v1
             }
         }
 
-        [HttpPut]
+        // PUT: api/v1/Order/OrderViewModel
+        [HttpPut("{id}")]
         public IActionResult UpdateOrder([FromBody] OrderViewModel orderViewModel)
         {
             try
@@ -80,6 +118,7 @@ namespace ShopperCart.Web.Host.Controllers.v1
             }
         }
 
+        // DELETE: api/v1/Order/9
         [HttpDelete("{id}")]
         public IActionResult DeleteOrder(int id)
         {
