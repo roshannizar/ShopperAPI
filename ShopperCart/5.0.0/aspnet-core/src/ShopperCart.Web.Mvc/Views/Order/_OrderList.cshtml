@@ -20,10 +20,8 @@
         <span class="badge badge-info">Total Item(s) Inside: @Model.OrderItems.Count</span>
         <hr />
         <div class="btn-group" role="group" aria-label="Basic example">
-            <a class="btn btn-info btn-sm" asp-controller="Order" asp-action="OrderDetail" asp-route-id="@Model.Id">More</a>
-            <form method="post" asp-controller="Order" asp-action="OrderDelete" asp-route-id="@Model.Id">
-                <input type="submit" class="btn btn-danger btn-sm" value="Remove" />
-            </form>
+            <a class="btn btn-info btn-sm" asp-controller="Order" asp-action="ShowOrder" asp-route-id="@Model.Id">More</a>
+            <a class="btn btn-danger btn-sm" onclick="DeleteOrder(@Model.Id)">Remove</a>
         </div>
     </div>
 </div>

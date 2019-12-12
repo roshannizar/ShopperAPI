@@ -44,11 +44,11 @@
                                 <i class="material-icons">menu</i>
                             </a>
                             <ul class="dropdown-menu pull-right">
-                                <li><a class="waves-effect waves-block edit-tenant" asp-controller="Order" asp-action="ShowOrder" asp-route-Id="@order.Id"><i class="material-icons">edit</i>@L("Edit")</a></li>
                                 <li>
-                                    <form method="post" asp-controller="Order" asp-action="RemoveOrder" asp-route-Id="@order.Id">
-                                        <input type="submit" class="btn btn-secondary waves-effect waves-block delete-tenant glyphicon glyphicon-trash" value="Remove" />
-                                    </form>
+                                    <a class="waves-effect waves-block edit-tenant" asp-controller="Order" asp-action="ShowOrder" asp-route-Id="@order.Id"><i class="material-icons">edit</i>@L("Edit")</a>
+                                </li>
+                                <li>
+                                    <a class="waves-effect waves-block delete-tenant" onclick="DeleteOrder(@order.Id)"><i class="material-icons">delete_sweep</i>@L("Remove")</a>
                                 </li>
                             </ul>
                         </td>
@@ -60,4 +60,5 @@
     </div>
 }
 
+<script src="~/view-resources/Views/Order/delete-order.js"></script>
 

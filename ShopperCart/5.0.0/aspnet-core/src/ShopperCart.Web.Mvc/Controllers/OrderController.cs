@@ -73,7 +73,7 @@ namespace ShopperCart.Web.Mvc.Controllers
         }
 
         [HttpGet]
-        public IActionResult OrderDetail(int id)
+        public IActionResult ShowOrder(int id)
         {
             try
             {
