@@ -152,6 +152,7 @@ function Confirm() {
         },
         error: function (jqXhr, textStatus, errorThrown) {
             console.log(jqXhr, textStatus, errorThrown);
+            closeSpinner();
         }
     });
 }
