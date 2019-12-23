@@ -82,7 +82,7 @@ namespace ShopperCart.Web.Host.Controllers.v1
                 orderService.CreateOrder(order);
 
                 TempData["Message"] = "Order has been added successfully!";
-                return Redirect("https://localhost:62114/Order/Get");
+                return Ok("Created Succesfully!");
             }
             catch (Exception ex)
             {
@@ -108,7 +108,7 @@ namespace ShopperCart.Web.Host.Controllers.v1
 
                 TempData["Message"] = "Save changes made for order Ref No: " +
                     order.OrderItems[0].OrderId + " successfully!";
-                return RedirectToAction("Index", "Order");
+                return Ok("Updated Successfully");
 
             }
             catch (Exception ex)
@@ -126,7 +126,7 @@ namespace ShopperCart.Web.Host.Controllers.v1
             {
                 orderService.DeleteOrder(id);
                 TempData["Message"] = "You have deleted the order Ref No: " + id + " successfully!";
-                return RedirectToAction("Index", "Order");
+                return Ok("Deleted successfully!");
             }
             catch (Exception ex)
             {

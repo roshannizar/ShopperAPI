@@ -8498,3 +8498,708 @@ DEBUG 2019-12-12 12:19:42,463 [11   ] HttpRequestEntityChangeSetReasonProvider -
 DEBUG 2019-12-12 12:19:47,478 [11   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
 DEBUG 2019-12-12 12:19:52,482 [11   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
 DEBUG 2019-12-12 12:19:57,493 [11   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:11:07,614 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-19 12:11:08,785 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-12-19 12:11:08,826 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ShopperCart.Web.Startup.ShopperCartWebMvcModule, ShopperCart.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ShopperCart.ShopperCartWebCoreModule, ShopperCart.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,831 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ShopperCart.ShopperCartApplicationModule, ShopperCart.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,832 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ShopperCart.ShopperCartCoreModule, ShopperCart.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,832 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,833 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,834 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,836 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,837 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ShopperCart.EntityFrameworkCore.ShopperCartEntityFrameworkModule, ShopperCart.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,837 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,838 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,838 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,838 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,839 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,840 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:08,848 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-12-19 12:11:09,370 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-19 12:11:09,370 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-19 12:11:09,370 [1    ] o.Configuration.LanguageManagementConfig - Converted ShopperCart (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-19 12:11:09,370 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-19 12:11:10,681 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ShopperCart.EntityFrameworkCore.ShopperCartDbContext, ShopperCart.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:11:14,028 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-12-19 12:11:14,301 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-12-19 12:11:14,371 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-12-19 12:11:14,393 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ShopperCart
+DEBUG 2019-12-19 12:11:14,405 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-12-19 12:11:15,131 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-12-19 12:11:15,602 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-12-19 12:11:15,809 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2019-12-19 12:11:15,809 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-12-19 12:11:15,819 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Users.Dto.CreateUserDto
+DEBUG 2019-12-19 12:11:15,821 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Users.Dto.UserDto
+DEBUG 2019-12-19 12:11:15,821 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-12-19 12:11:15,822 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-12-19 12:11:15,822 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Roles.Dto.PermissionDto
+DEBUG 2019-12-19 12:11:15,822 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Product.Dto.ProductDto
+DEBUG 2019-12-19 12:11:15,822 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-12-19 12:11:15,822 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.MultiTenancy.Dto.TenantDto
+DEBUG 2019-12-19 12:11:15,822 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-12-19 12:11:15,823 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Web.Models.Roles.EditRoleModalViewModel
+DEBUG 2019-12-19 12:13:26,935 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-19 12:13:27,437 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-12-19 12:13:27,508 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ShopperCart.Web.Startup.ShopperCartWebMvcModule, ShopperCart.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,512 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ShopperCart.ShopperCartWebCoreModule, ShopperCart.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,513 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ShopperCart.ShopperCartApplicationModule, ShopperCart.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,514 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ShopperCart.ShopperCartCoreModule, ShopperCart.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,514 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,515 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,516 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,517 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,531 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ShopperCart.EntityFrameworkCore.ShopperCartEntityFrameworkModule, ShopperCart.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,533 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,533 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,534 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,534 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,535 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:27,543 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-12-19 12:13:27,937 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-19 12:13:27,937 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-19 12:13:27,937 [1    ] o.Configuration.LanguageManagementConfig - Converted ShopperCart (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-19 12:13:27,937 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-19 12:13:29,616 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ShopperCart.EntityFrameworkCore.ShopperCartDbContext, ShopperCart.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-19 12:13:34,767 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-12-19 12:13:35,123 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-12-19 12:13:35,189 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-12-19 12:13:35,245 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ShopperCart
+DEBUG 2019-12-19 12:13:35,282 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-12-19 12:13:36,578 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-12-19 12:13:37,258 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-12-19 12:13:37,586 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2019-12-19 12:13:37,586 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-12-19 12:13:37,605 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Users.Dto.CreateUserDto
+DEBUG 2019-12-19 12:13:37,607 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Users.Dto.UserDto
+DEBUG 2019-12-19 12:13:37,608 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-12-19 12:13:37,609 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-12-19 12:13:37,609 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Roles.Dto.PermissionDto
+DEBUG 2019-12-19 12:13:37,629 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Product.Dto.ProductDto
+DEBUG 2019-12-19 12:13:37,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-12-19 12:13:37,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.MultiTenancy.Dto.TenantDto
+DEBUG 2019-12-19 12:13:37,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-12-19 12:13:37,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ShopperCart.Web.Models.Roles.EditRoleModalViewModel
+DEBUG 2019-12-19 12:13:46,605 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:13:47,772 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:13:47,932 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:13:49,243 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:13:49,364 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:13:52,116 [15   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-19 12:13:54,138 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Roshan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2019-12-19 12:13:55,063 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-12-19 12:13:55,659 [4    ] uthorization.DefaultAuthorizationService - Authorization failed.
+INFO  2019-12-19 12:13:55,746 [4    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-12-19 12:13:55,938 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 847.3721ms 302 
+INFO  2019-12-19 12:13:55,940 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
+INFO  2019-12-19 12:13:55,972 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ShopperCart.Web.Controllers.AccountController.Login (ShopperCart.Web.Mvc)'
+DEBUG 2019-12-19 12:13:57,921 [8    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:14:04,263 [15   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-19 12:14:09,802 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(System.String, System.String, System.String) on controller ShopperCart.Web.Controllers.AccountController (ShopperCart.Web.Mvc).
+DEBUG 2019-12-19 12:14:09,900 [14   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:14:16,712 [14   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-19 12:14:21,202 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+DEBUG 2019-12-19 12:14:24,656 [8    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-19 12:14:28,965 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 7824.1363ms.
+INFO  2019-12-19 12:14:28,970 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action ShopperCart.Web.Controllers.AccountController.Login (ShopperCart.Web.Mvc) in 19164.5854ms
+INFO  2019-12-19 12:14:28,976 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ShopperCart.Web.Controllers.AccountController.Login (ShopperCart.Web.Mvc)'
+INFO  2019-12-19 12:14:29,021 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 33074.4152ms 200 text/html; charset=utf-8
+INFO  2019-12-19 12:14:29,381 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/_Layout.css?v=vIEtxnpR3ZrYbYcueRr_mJ9XuJJzDprh4sMCwvRBcqk  
+INFO  2019-12-19 12:14:29,393 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/roboto.css?v=DWPiEyLnt8XZ68WQeudmZPGSejowhmQNUUhaX8dYF1Q  
+INFO  2019-12-19 12:14:29,399 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637123544172624952  
+INFO  2019-12-19 12:14:29,412 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.css?v=j_16MTiQNlUrKdjTrCjLCSGkIIjHvt8tFUyucW02Vqw  
+INFO  2019-12-19 12:14:29,418 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637123544172624952  
+INFO  2019-12-19 12:14:29,434 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js?v=637123544689031986  
+INFO  2019-12-19 12:14:29,460 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-19 12:14:29,487 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-19 12:14:29,494 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2019-12-19 12:14:29,539 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2019-12-19 12:14:29,585 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/Login.css'. Physical path: 'C:\Users\Roshan\Documents\GitHub\ShopperAPI\ShopperCart\5.0.0\aspnet-core\src\ShopperCart.Web.Mvc\wwwroot\view-resources\Views\Account\Login.css'
+INFO  2019-12-19 12:14:29,594 [7    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/_Layout.css'. Physical path: 'C:\Users\Roshan\Documents\GitHub\ShopperAPI\ShopperCart\5.0.0\aspnet-core\src\ShopperCart.Web.Mvc\wwwroot\view-resources\Views\Account\_Layout.css'
+INFO  2019-12-19 12:14:29,601 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 327.8933ms 200 text/css
+INFO  2019-12-19 12:14:29,619 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 364.6549ms 200 text/css
+INFO  2019-12-19 12:14:29,651 [23   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'C:\Users\Roshan\Documents\GitHub\ShopperAPI\ShopperCart\5.0.0\aspnet-core\src\ShopperCart.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2019-12-19 12:14:29,735 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 260.1427ms 200 application/javascript
+INFO  2019-12-19 12:14:29,760 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.css?v=W8a9WvLyUO7CXtOC4f9LoUMwkywM7JSq-Xm5kNsYW08  
+INFO  2019-12-19 12:14:29,764 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/css/bootstrap.css?v=fmMNkMcjSw3xcp9iuPnku_ryk9kaWgrEbfJfKmdZ45o  
+INFO  2019-12-19 12:14:29,790 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/toastr/toastr.css was not modified
+INFO  2019-12-19 12:14:29,795 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/roboto/roboto.css was not modified
+INFO  2019-12-19 12:14:29,812 [23   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/bootstrap/dist/css/bootstrap.css was not modified
+INFO  2019-12-19 12:14:29,824 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 564.4444ms 304 text/css
+INFO  2019-12-19 12:14:29,880 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 63.88ms 304 text/css
+DEBUG 2019-12-19 12:14:29,940 [15   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-19 12:14:29,993 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 66.2382ms 304 text/css
+INFO  2019-12-19 12:14:30,004 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/css/font-awesome.css?v=NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w  
+INFO  2019-12-19 12:14:30,013 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css?v=l7wu43l7XpKWzFn29hiH8AFe4I_CNzbCPmaAQivPYMg  
+INFO  2019-12-19 12:14:30,016 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/font-awesome/css/font-awesome.css was not modified
+INFO  2019-12-19 12:14:30,024 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/famfamfam-flags/dist/sprite/famfamfam-flags.css was not modified
+INFO  2019-12-19 12:14:30,027 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 136.3748ms 304 text/css
+INFO  2019-12-19 12:14:30,033 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 85.3969ms 304 text/css
+INFO  2019-12-19 12:14:30,035 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.css?v=2SsVsQpWRHM3EJ4D4MT4RRpiEXbEuK0vEjPxVr5P7Ek  
+INFO  2019-12-19 12:14:30,038 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/animate.css/animate.css?v=00w68NO3TLuHjKRHJmjrrgJBDtG_6OhbJEu1gtHcsuo  
+INFO  2019-12-19 12:14:30,045 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/css/materialize.css?v=OdWlipUYj8b9Oa4RyT45njteIcxH-4pGocqe0r0V8js  
+INFO  2019-12-19 12:14:30,051 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/animate.css/animate.css was not modified
+INFO  2019-12-19 12:14:30,055 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/materialize.css was not modified
+INFO  2019-12-19 12:14:30,073 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/material-icons/materialicons.css was not modified
+INFO  2019-12-19 12:14:30,082 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 26.8736ms 304 text/css
+INFO  2019-12-19 12:14:30,092 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 21.1954ms 304 text/css
+INFO  2019-12-19 12:14:30,096 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 73.84060000000001ms 304 text/css
+INFO  2019-12-19 12:14:30,104 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.js?v=o2PUQBkwW7VjtzD5RNxKPa3oShr3fMFHds_2dwIAV5M  
+INFO  2019-12-19 12:14:30,114 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/css/style.css?v=bPgB0ZVHxRN_Tl8hTCsP7OlhjsNSnfef2fCBszGJS4k  
+INFO  2019-12-19 12:14:30,120 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/json2/json2.js?v=EZJ68U7eUi8uSP0MRRUalYten2eOlhREE9kJOIbIeYg  
+INFO  2019-12-19 12:14:30,126 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/style.css was not modified
+INFO  2019-12-19 12:14:30,136 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/Login.js'. Physical path: 'C:\Users\Roshan\Documents\GitHub\ShopperAPI\ShopperCart\5.0.0\aspnet-core\src\ShopperCart.Web.Mvc\wwwroot\view-resources\Views\Account\Login.js'
+INFO  2019-12-19 12:14:30,140 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 37.0351ms 304 text/css
+INFO  2019-12-19 12:14:30,148 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 48.8156ms 200 application/javascript
+INFO  2019-12-19 12:14:30,163 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/json2/json2.js was not modified
+INFO  2019-12-19 12:14:30,190 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.css?v=0zP86LzXedNkkBjePtKrMTAPuIy6EzHfGlyYvsmGLBw  
+INFO  2019-12-19 12:14:30,199 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery/dist/jquery.js?v=DZAnKJ_6XZ9si04Hgrsxu_8s717jcIzLy3oi35EouyE  
+INFO  2019-12-19 12:14:30,206 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 66.6928ms 304 application/javascript
+INFO  2019-12-19 12:14:30,228 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery/dist/jquery.js was not modified
+INFO  2019-12-19 12:14:30,232 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js?v=7CN4bWPV0U57HDA4YjdCBKCAynhqdWErjNn-5rrsW_I  
+INFO  2019-12-19 12:14:30,238 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/js/bootstrap.js?v=Cr6N6zNN4bp0OwTQOZ6Z66M2r-2dpy_EwKMCyZ-SOMg  
+INFO  2019-12-19 12:14:30,245 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 72.7647ms 304 application/javascript
+INFO  2019-12-19 12:14:30,247 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/moment/min/moment-with-locales.js was not modified
+INFO  2019-12-19 12:14:30,254 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/bootstrap/dist/js/bootstrap.js was not modified
+INFO  2019-12-19 12:14:30,270 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/dist/jquery.validate.js?v=KuzD50lDGNI5jq_ipt4hwDpSJk3fhseTR1jdvaBoZLs  
+INFO  2019-12-19 12:14:30,275 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 59.3442ms 304 application/javascript
+INFO  2019-12-19 12:14:30,283 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-validation/dist/jquery.validate.js was not modified
+INFO  2019-12-19 12:14:30,289 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 31.9325ms 304 application/javascript
+INFO  2019-12-19 12:14:30,296 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.js?v=C7DJ6LzTt1Hvj9fd-yRnySs3I4T2B8XmQ3TqXQjc00g  
+INFO  2019-12-19 12:14:30,301 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 38.2934ms 304 application/javascript
+INFO  2019-12-19 12:14:30,304 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/blockUI/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc  
+INFO  2019-12-19 12:14:30,310 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/toastr/toastr.js was not modified
+INFO  2019-12-19 12:14:30,320 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert.min.js?v=aPktydUv1rN3mouQeXoKi3ioFTIQlULuqYeoTAA2ihY  
+INFO  2019-12-19 12:14:30,327 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 27.9919ms 304 application/javascript
+INFO  2019-12-19 12:14:30,334 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/sweetalert/dist/sweetalert.min.js was not modified
+INFO  2019-12-19 12:14:30,348 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/blockUI/jquery.blockUI.js was not modified
+INFO  2019-12-19 12:14:30,370 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0  
+INFO  2019-12-19 12:14:30,396 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 52.2945ms 304 application/javascript
+INFO  2019-12-19 12:14:30,457 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/spin.js/spin.js was not modified
+INFO  2019-12-19 12:14:30,506 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k  
+INFO  2019-12-19 12:14:30,520 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 144.9871ms 304 application/javascript
+INFO  2019-12-19 12:14:30,532 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/spin.js/jquery.spin.js was not modified
+INFO  2019-12-19 12:14:30,537 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 58.3573ms 304 application/javascript
+INFO  2019-12-19 12:14:30,548 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.js?v=Lar7zQhqgdoUsaqhuwkgnWgsC-eRWIxHhJPV-QtrDog  
+INFO  2019-12-19 12:14:30,558 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 132.8733ms 304 application/javascript
+INFO  2019-12-19 12:14:30,594 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Waves/dist/waves.js was not modified
+INFO  2019-12-19 12:14:30,632 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js?v=FGfi3RfHf06ftjVdq2JaO16cF9CPZNPvujmuYBacXxg  
+INFO  2019-12-19 12:14:30,668 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 62.556900000000006ms 304 application/javascript
+INFO  2019-12-19 12:14:30,687 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=lMgLZMlGsipWDxpvEPxfKVREzRedV_ygRnTj2kvADpw  
+INFO  2019-12-19 12:14:30,705 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/abp.js was not modified
+INFO  2019-12-19 12:14:30,721 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=ImopdkB8alCil1HigOwW3CDqWKsLZXyplf7TXBbjRnE  
+INFO  2019-12-19 12:14:30,730 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js was not modified
+INFO  2019-12-19 12:14:30,738 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js was not modified
+INFO  2019-12-19 12:14:30,753 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 160.0333ms 304 application/javascript
+INFO  2019-12-19 12:14:30,758 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 52.342000000000006ms 304 application/javascript
+INFO  2019-12-19 12:14:30,762 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 153.5952ms 304 application/javascript
+INFO  2019-12-19 12:14:30,766 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=Y3zoG-hSFKmbS3BHKo_wFWRPbyzJXKoNrnF73uFdtqU  
+INFO  2019-12-19 12:14:30,769 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=RJuGDX616JN_UziXsmKnth0alpECKCx0gtxKZVrZWxY  
+INFO  2019-12-19 12:14:30,771 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=guLvtVJMvLobKpGAlQigrGWMQ1sGQo4yTL46zjGQUUY  
+INFO  2019-12-19 12:14:30,778 [4    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-12-19 12:14:30,781 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js was not modified
+INFO  2019-12-19 12:14:30,785 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js was not modified
+INFO  2019-12-19 12:14:30,790 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js was not modified
+INFO  2019-12-19 12:14:30,795 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 24.241500000000002ms 304 application/javascript
+INFO  2019-12-19 12:14:30,806 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 27.517400000000002ms 304 application/javascript
+INFO  2019-12-19 12:14:30,812 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 33.119ms 304 application/javascript
+INFO  2019-12-19 12:14:30,816 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/js/admin.js?v=_sUixSUZcmP81slFpHh9ygZ5nNihdHlHLkpoSCncHCw  
+INFO  2019-12-19 12:14:30,819 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/js/main.js?v=qoYwE7KlcFuDVLCxotxfSJDP-3yjYAKSbaUcAaThgyE  
+INFO  2019-12-19 12:14:30,826 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 1292.4284ms
+INFO  2019-12-19 12:14:30,828 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/admin.js was not modified
+INFO  2019-12-19 12:14:30,835 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-19 12:14:30,838 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/main.js was not modified
+INFO  2019-12-19 12:14:30,863 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 23.2936ms 304 application/javascript
+INFO  2019-12-19 12:14:30,899 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 28.1067ms 304 application/javascript
+INFO  2019-12-19 12:14:30,918 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1445.5053ms 200 application/x-javascript
+INFO  2019-12-19 12:14:30,943 [23   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Waves/dist/waves.css was not modified
+INFO  2019-12-19 12:14:30,983 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 950.4832ms 304 text/css
+INFO  2019-12-19 12:14:31,253 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2019-12-19 12:14:31,262 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/famfamfam-flags/dist/sprite/famfamfam-flags.png was not modified
+INFO  2019-12-19 12:14:31,269 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 31.734ms 304 image/png
+INFO  2019-12-19 12:14:31,304 [14   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-12-19 12:14:31,335 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 1770.1904000000002ms
+INFO  2019-12-19 12:14:31,345 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-19 12:14:31,353 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1967.5568ms 200 application/x-javascript; charset=utf-8
+INFO  2019-12-19 12:14:32,089 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2  
+INFO  2019-12-19 12:14:32,150 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.woff2  
+INFO  2019-12-19 12:14:32,156 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2  
+INFO  2019-12-19 12:14:32,166 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2 was not modified
+INFO  2019-12-19 12:14:32,175 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/material-icons/materialicons.woff2 was not modified
+INFO  2019-12-19 12:14:32,203 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 189.9143ms 304 font/woff2
+INFO  2019-12-19 12:14:32,208 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 171.79600000000002ms 304 font/woff2
+INFO  2019-12-19 12:14:32,222 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2 was not modified
+INFO  2019-12-19 12:14:32,253 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 221.6083ms 304 font/woff2
+DEBUG 2019-12-19 12:14:35,156 [7    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:14:40,271 [7    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:14:45,372 [7    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:14:50,544 [7    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-19 12:14:54,934 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/Account/Login application/x-www-form-urlencoded 261
+INFO  2019-12-19 12:14:54,968 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ShopperCart.Web.Controllers.AccountController.Login (ShopperCart.Web.Mvc)'
+INFO  2019-12-19 12:14:54,993 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] Login(ShopperCart.Web.Models.Account.LoginViewModel, System.String, System.String) on controller ShopperCart.Web.Controllers.AccountController (ShopperCart.Web.Mvc).
+DEBUG 2019-12-19 12:14:55,726 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-19 12:14:57,596 [4    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application signed in.
+INFO  2019-12-19 12:14:57,784 [4    ] tonsoftJson.NewtonsoftJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-19 12:14:57,831 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action ShopperCart.Web.Controllers.AccountController.Login (ShopperCart.Web.Mvc) in 2833.7192ms
+INFO  2019-12-19 12:14:57,834 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ShopperCart.Web.Controllers.AccountController.Login (ShopperCart.Web.Mvc)'
+INFO  2019-12-19 12:14:57,837 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2914.3782ms 200 application/json; charset=utf-8
+INFO  2019-12-19 12:14:57,881 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-12-19 12:14:57,959 [4    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-12-19 12:14:57,963 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ShopperCart.Web.Controllers.HomeController.Index (ShopperCart.Web.Mvc)'
+INFO  2019-12-19 12:14:57,971 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller ShopperCart.Web.Controllers.HomeController (ShopperCart.Web.Mvc).
+INFO  2019-12-19 12:14:58,029 [4    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+DEBUG 2019-12-19 12:14:58,396 [23   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Configuration.Setting, Id:9
+DEBUG 2019-12-19 12:14:58,815 [23   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Authorization.Users.User, Id:5
+DEBUG 2019-12-19 12:14:59,751 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Authorization.Users.User, Id:5
+DEBUG 2019-12-19 12:14:59,751 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Authorization.Roles.Role, Id:3
+DEBUG 2019-12-19 12:14:59,751 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:7
+DEBUG 2019-12-19 12:14:59,751 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:8
+DEBUG 2019-12-19 12:14:59,751 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:9
+DEBUG 2019-12-19 12:14:59,754 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:12
+DEBUG 2019-12-19 12:15:01,029 [7    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-19 12:15:02,105 [4    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 4069.9553ms.
+INFO  2019-12-19 12:15:02,196 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action ShopperCart.Web.Controllers.HomeController.Index (ShopperCart.Web.Mvc) in 4139.4092ms
+INFO  2019-12-19 12:15:02,217 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/_Layout.css?v=EFf7i5jlosvsiGAo2riUBgnYDrO8ijXLWd0k0nhhYrg  
+INFO  2019-12-19 12:15:02,232 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/images/user.png  
+INFO  2019-12-19 12:15:02,246 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-select/dist/css/bootstrap-select.css?v=a7N4Jki3LzSbThclvqbu4nF45twcjuc772JGFhY9qwk  
+INFO  2019-12-19 12:15:02,254 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ShopperCart.Web.Controllers.HomeController.Index (ShopperCart.Web.Mvc)'
+INFO  2019-12-19 12:15:02,263 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/morris.js/morris.css?v=szHusaozbQctTn4FX-3l5E0A5zoxz7-ne4fr8NgWJlw  
+INFO  2019-12-19 12:15:02,272 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/css/themes/all-themes.css?v=XaAlkmhL9gA6mBxpcxGYAWxggxkIpRmT9qGbKejs6eA  
+INFO  2019-12-19 12:15:02,296 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/user.png was not modified
+INFO  2019-12-19 12:15:02,316 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/bootstrap-select/dist/css/bootstrap-select.css was not modified
+INFO  2019-12-19 12:15:02,329 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 102.8439ms 304 image/png
+INFO  2019-12-19 12:15:02,334 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4391.7672ms 200 text/html; charset=utf-8
+INFO  2019-12-19 12:15:02,354 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 109.6286ms 304 text/css
+INFO  2019-12-19 12:15:02,371 [23   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/morris.js/morris.css was not modified
+INFO  2019-12-19 12:15:02,477 [24   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/themes/all-themes.css was not modified
+INFO  2019-12-19 12:15:02,486 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 160.0303ms 304 text/css
+INFO  2019-12-19 12:15:02,496 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-select/dist/js/bootstrap-select.js?v=_KDPX2Vvqq8sySMxlLNJxt9j6Cmb8i_xp602ozhYxzI  
+INFO  2019-12-19 12:15:02,513 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-slimscroll/jquery.slimscroll.js?v=4K6ZHzwMYR5_eU2SeDIaByus_qki9IFY8hmxl5U6D1Y  
+INFO  2019-12-19 12:15:02,519 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/bootstrap-select/dist/js/bootstrap-select.js was not modified
+INFO  2019-12-19 12:15:02,527 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-slimscroll/jquery.slimscroll.js was not modified
+INFO  2019-12-19 12:15:02,530 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 52.3055ms 304 application/javascript
+INFO  2019-12-19 12:15:02,537 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 260.8754ms 304 text/css
+INFO  2019-12-19 12:15:02,545 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 63.0711ms 304 application/javascript
+INFO  2019-12-19 12:15:02,551 [25   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Shared/_Layout.css was not modified
+INFO  2019-12-19 12:15:02,556 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/_Layout.js?v=jOYc7_5N1zFKt3qTihQ-9Kc0wjSMXkAeHUXNyvn8sYo  
+INFO  2019-12-19 12:15:02,590 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/push.js/push.js?v=HDxbpm8oBKwe1bmX9Z1SahYYA7zEbc1dk7LfopvOvoE  
+INFO  2019-12-19 12:15:02,597 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637123544172624952  
+INFO  2019-12-19 12:15:02,701 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637123544172624952  
+INFO  2019-12-19 12:15:02,773 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-19 12:15:02,780 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-19 12:15:02,787 [24   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Shared/_Layout.js was not modified
+INFO  2019-12-19 12:15:02,796 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2019-12-19 12:15:02,800 [23   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2019-12-19 12:15:02,867 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 239.22680000000003ms 304 application/javascript
+INFO  2019-12-19 12:15:03,042 [4    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-12-19 12:15:03,052 [23   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-12-19 12:15:03,063 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 381.6517ms 304 text/css
+INFO  2019-12-19 12:15:03,070 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 257.3046ms
+INFO  2019-12-19 12:15:03,072 [23   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 264.80170000000004ms
+INFO  2019-12-19 12:15:03,076 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-19 12:15:03,079 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-19 12:15:03,084 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js?v=8bQpuR0dFdbi0KIM9VVSonDAxoXNRsdDAvuSZSI8Oyw  
+INFO  2019-12-19 12:15:03,089 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 501.5369ms 200 application/x-javascript
+INFO  2019-12-19 12:15:03,093 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 508.76700000000005ms 200 application/x-javascript; charset=utf-8
+INFO  2019-12-19 12:15:03,097 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js was not modified
+INFO  2019-12-19 12:15:03,103 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/images/user-img-background.jpg  
+INFO  2019-12-19 12:15:03,106 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/signalr-client/signalr.min.js?v=DeOex_tR7FzkV208FN2wnFJvIUIKXWsVjbW0171naJo  
+INFO  2019-12-19 12:15:03,112 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-countTo/jquery.countTo.js?v=AGGYFLOyVnIKn_2UCDl9D_5VWf8wHWCOtm9YU0P9g6I  
+INFO  2019-12-19 12:15:03,116 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0  
+INFO  2019-12-19 12:15:03,149 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 511.7187ms 304 application/javascript
+INFO  2019-12-19 12:15:03,178 [25   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-countTo/jquery.countTo.js was not modified
+INFO  2019-12-19 12:15:03,195 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/raphael/raphael.js?v=MPXjTSEImVJI1834JAHubdK7Lts1VTUPJmCQ9zKAjyA  
+INFO  2019-12-19 12:15:03,199 [24   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/font-awesome/fonts/fontawesome-webfont.woff2 was not modified
+INFO  2019-12-19 12:15:03,226 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/raphael/raphael.js was not modified
+INFO  2019-12-19 12:15:03,234 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 93.8468ms 304 font/woff2
+INFO  2019-12-19 12:15:03,240 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 110.13080000000001ms 304 application/javascript
+INFO  2019-12-19 12:15:03,316 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/chart.js/dist/Chart.bundle.js?v=TQAtDUIU_0XtXZLNjMBV8noK8jNSngwHlgtC_PvsRAk  
+INFO  2019-12-19 12:15:03,331 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 77.54950000000001ms 304 application/javascript
+INFO  2019-12-19 12:15:03,335 [23   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/chart.js/dist/Chart.bundle.js was not modified
+INFO  2019-12-19 12:15:03,342 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/morris.js/morris.js?v=cQB75DEaDbn4oSiaWgdoh3TuZCHSO-kYdD_Ehka48Ro  
+INFO  2019-12-19 12:15:03,347 [14   ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/user-img-background.jpg was not modified
+INFO  2019-12-19 12:15:03,351 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.js?v=t7kx8nPDixJ3ucbB9OBcTsCYhaSHvdrzJ54tfkmjjhI  
+INFO  2019-12-19 12:15:03,355 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 110.8858ms 304 application/javascript
+INFO  2019-12-19 12:15:03,362 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/morris.js/morris.js was not modified
+INFO  2019-12-19 12:15:03,367 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.js was not modified
+INFO  2019-12-19 12:15:03,371 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 168.8555ms 304 application/javascript
+INFO  2019-12-19 12:15:03,376 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 553.2882000000001ms 304 image/jpeg
+INFO  2019-12-19 12:15:03,380 [18   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/signalr-client/signalr.min.js was not modified
+INFO  2019-12-19 12:15:03,394 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 38.7564ms 304 application/javascript
+INFO  2019-12-19 12:15:03,396 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 793.3681ms 304 application/javascript
+INFO  2019-12-19 12:15:03,402 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/push.js/push.js was not modified
+INFO  2019-12-19 12:15:03,409 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 854.0461ms 304 application/javascript
+INFO  2019-12-19 12:15:03,437 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.resize.js?v=i59RRvMkqw-28mDu6YRzKo77gmM7k9aPZMtcw45wgu4  
+INFO  2019-12-19 12:15:03,488 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.resize.js was not modified
+INFO  2019-12-19 12:15:03,577 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.pie.js?v=RsEWYd9gdLG1bCIcU8j59Rkvf_1O7HtzoD1TRUs22cU  
+INFO  2019-12-19 12:15:03,582 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.categories.js?v=boFmSyjqeVxzSQb0qhVhRkCnWsf705mn-5CEBAaYNRo  
+INFO  2019-12-19 12:15:03,588 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.pie.js was not modified
+INFO  2019-12-19 12:15:03,599 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.time.js?v=pYLIMq3HE4prBar2HxbrrCdHAfG-Sv6nfnOaHDS5xBo  
+INFO  2019-12-19 12:15:03,606 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 149.4455ms 304 application/javascript
+INFO  2019-12-19 12:15:03,618 [23   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.categories.js was not modified
+INFO  2019-12-19 12:15:03,630 [24   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.time.js was not modified
+INFO  2019-12-19 12:15:03,649 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 124.7716ms 304 application/javascript
+INFO  2019-12-19 12:15:03,654 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 139.9865ms 304 application/javascript
+INFO  2019-12-19 12:15:03,662 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-sparkline/dist/jquery.sparkline.js?v=k0LZZpXY4vJp6vbA5CL5bb20Ou0IO3Shz-J6U6Vq56c  
+INFO  2019-12-19 12:15:03,668 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Home/Index.js?v=tRGDdqeVjO63iaO1qvGPpKF2NuT2riEOyYovlY_otk0  
+INFO  2019-12-19 12:15:03,677 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-sparkline/dist/jquery.sparkline.js was not modified
+INFO  2019-12-19 12:15:03,701 [14   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Home/Index.js was not modified
+INFO  2019-12-19 12:15:04,040 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 167.53ms 304 application/javascript
+INFO  2019-12-19 12:15:04,087 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 192.3469ms 304 application/javascript
+INFO  2019-12-19 12:15:04,095 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-12-19 12:15:04,099 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 64.6303ms 304 application/javascript
+INFO  2019-12-19 12:15:04,119 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2019-12-19 12:15:04,198 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2019-12-19 12:15:04,211 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 682.0106000000001ms 200 application/json
+INFO  2019-12-19 12:15:04,302 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=nOlq_iQdyEi9aDcdFejJWg  
+INFO  2019-12-19 12:15:04,332 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2019-12-19 12:15:04,605 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"nOlq_iQdyEi9aDcdFejJWg","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2019-12-19T12:15:04.5841386+05:30","Properties":{}}
+DEBUG 2019-12-19 12:15:04,636 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: nOlq_iQdyEi9aDcdFejJWg
+DEBUG 2019-12-19 12:15:06,450 [15   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-19 12:15:08,537 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/Order  
+INFO  2019-12-19 12:15:08,560 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ShopperCart.Web.Mvc.Controllers.OrderController.Index (ShopperCart.Web.Mvc)'
+INFO  2019-12-19 12:15:08,571 [15   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Order", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ShopperCart.Web.Mvc.Controllers.OrderController (ShopperCart.Web.Mvc).
+DEBUG 2019-12-19 12:15:11,820 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:15:13,532 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:6
+DEBUG 2019-12-19 12:15:13,532 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Customer, Id:1
+DEBUG 2019-12-19 12:15:13,532 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:17
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Product, Id:3
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:8
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:8
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Product, Id:2
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:18
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Product, Id:5
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:19
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Product, Id:4
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:20
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:10
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:11
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:12
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:11
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:15
+DEBUG 2019-12-19 12:15:13,533 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:12
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:16
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:13
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:21
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:14
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:22
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:15
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:23
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:16
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:24
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:25
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:17
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:26
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:18
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:27
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:19
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:28
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:20
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:29
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:21
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:30
+DEBUG 2019-12-19 12:15:13,534 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:22
+DEBUG 2019-12-19 12:15:13,535 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:31
+DEBUG 2019-12-19 12:15:13,535 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:23
+DEBUG 2019-12-19 12:15:13,535 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:32
+DEBUG 2019-12-19 12:15:13,535 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:24
+DEBUG 2019-12-19 12:15:13,535 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:33
+DEBUG 2019-12-19 12:15:13,535 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:25
+DEBUG 2019-12-19 12:15:13,535 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:34
+DEBUG 2019-12-19 12:15:13,535 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:26
+DEBUG 2019-12-19 12:15:13,535 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:35
+DEBUG 2019-12-19 12:15:13,535 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:27
+DEBUG 2019-12-19 12:15:13,535 [15   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:36
+INFO  2019-12-19 12:15:13,906 [15   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-12-19 12:15:13,927 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,929 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,929 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,930 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,930 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,931 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,931 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,932 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,932 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,933 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,933 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,934 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,934 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,934 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,935 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,935 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,936 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,936 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,937 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:15:13,937 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+DEBUG 2019-12-19 12:15:14,419 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Authorization.Users.User, Id:5
+INFO  2019-12-19 12:15:14,484 [4    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 590.9198ms.
+INFO  2019-12-19 12:15:14,552 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action ShopperCart.Web.Mvc.Controllers.OrderController.Index (ShopperCart.Web.Mvc) in 5914.1881ms
+INFO  2019-12-19 12:15:14,649 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ShopperCart.Web.Mvc.Controllers.OrderController.Index (ShopperCart.Web.Mvc)'
+INFO  2019-12-19 12:15:14,735 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6117.5839000000005ms 200 text/html; charset=utf-8
+DEBUG 2019-12-19 12:15:14,743 [8    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: nOlq_iQdyEi9aDcdFejJWg
+INFO  2019-12-19 12:15:14,922 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2019-12-19 12:15:14,944 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637123544172624952  
+INFO  2019-12-19 12:15:14,956 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10657.4586ms 101 
+INFO  2019-12-19 12:15:14,964 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637123544172624952  
+INFO  2019-12-19 12:15:14,967 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-19 12:15:14,975 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Order/delete-order.js  
+INFO  2019-12-19 12:15:14,996 [24   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2019-12-19 12:15:15,000 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-19 12:15:15,012 [18   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Order/delete-order.js was not modified
+INFO  2019-12-19 12:15:15,028 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2019-12-19 12:15:15,068 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 237.83550000000002ms 304 application/javascript
+INFO  2019-12-19 12:15:15,117 [24   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-12-19 12:15:15,120 [25   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-12-19 12:15:15,138 [24   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 124.25120000000001ms
+INFO  2019-12-19 12:15:15,146 [25   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 106.8071ms
+INFO  2019-12-19 12:15:15,148 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-19 12:15:15,203 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-19 12:15:15,212 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 361.8764ms 200 application/x-javascript; charset=utf-8
+INFO  2019-12-19 12:15:15,219 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 416.48940000000005ms 200 application/x-javascript
+INFO  2019-12-19 12:15:15,233 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-12-19 12:15:15,248 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2019-12-19 12:15:15,263 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2019-12-19 12:15:15,268 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 42.4257ms 200 application/json
+INFO  2019-12-19 12:15:15,285 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=mSu4Io0gU3nUPEZ9p2BLiA  
+INFO  2019-12-19 12:15:15,304 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2019-12-19 12:15:15,330 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"mSu4Io0gU3nUPEZ9p2BLiA","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2019-12-19T12:15:15.3299736+05:30","Properties":{}}
+DEBUG 2019-12-19 12:15:15,330 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: mSu4Io0gU3nUPEZ9p2BLiA
+INFO  2019-12-19 12:15:17,576 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/Order/OrderItems  
+INFO  2019-12-19 12:15:17,594 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ShopperCart.Web.Mvc.Controllers.OrderController.OrderItems (ShopperCart.Web.Mvc)'
+INFO  2019-12-19 12:15:17,618 [23   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "OrderItems", controller = "Order", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult OrderItems() on controller ShopperCart.Web.Mvc.Controllers.OrderController (ShopperCart.Web.Mvc).
+DEBUG 2019-12-19 12:15:17,639 [15   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:15:17,987 [23   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Product, Id:2
+DEBUG 2019-12-19 12:15:17,987 [23   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Product, Id:3
+DEBUG 2019-12-19 12:15:17,987 [23   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Product, Id:4
+DEBUG 2019-12-19 12:15:17,988 [23   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Product, Id:5
+DEBUG 2019-12-19 12:15:17,988 [23   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Customer, Id:1
+INFO  2019-12-19 12:15:18,072 [23   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view OrderItems.
+DEBUG 2019-12-19 12:15:18,235 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Authorization.Users.User, Id:5
+INFO  2019-12-19 12:15:18,285 [4    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view OrderItems executed in 216.03750000000002ms.
+INFO  2019-12-19 12:15:18,332 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action ShopperCart.Web.Mvc.Controllers.OrderController.OrderItems (ShopperCart.Web.Mvc) in 667.7893ms
+INFO  2019-12-19 12:15:18,376 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ShopperCart.Web.Mvc.Controllers.OrderController.OrderItems (ShopperCart.Web.Mvc)'
+DEBUG 2019-12-19 12:15:18,380 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: mSu4Io0gU3nUPEZ9p2BLiA
+INFO  2019-12-19 12:15:18,427 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 812.5726000000001ms 200 text/html; charset=utf-8
+INFO  2019-12-19 12:15:18,461 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2019-12-19 12:15:18,466 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637123544172624952  
+INFO  2019-12-19 12:15:18,471 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637123544172624952  
+INFO  2019-12-19 12:15:18,485 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Order/add-order-items.js  
+INFO  2019-12-19 12:15:18,534 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-19 12:15:18,551 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-19 12:15:18,605 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2019-12-19 12:15:18,694 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3193.6839ms 101 
+INFO  2019-12-19 12:15:18,697 [23   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2019-12-19 12:15:18,721 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Order/load-product.js  
+INFO  2019-12-19 12:15:18,732 [4    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-12-19 12:15:18,736 [23   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-12-19 12:15:18,751 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 130.71380000000002ms
+INFO  2019-12-19 12:15:18,769 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-19 12:15:18,785 [23   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 51.5354ms
+INFO  2019-12-19 12:15:18,832 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 312.5853ms 200 application/x-javascript; charset=utf-8
+INFO  2019-12-19 12:15:18,852 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-19 12:15:18,856 [24   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Order/add-order-items.js'. Physical path: 'C:\Users\Roshan\Documents\GitHub\ShopperAPI\ShopperCart\5.0.0\aspnet-core\src\ShopperCart.Web.Mvc\wwwroot\view-resources\Views\Order\add-order-items.js'
+INFO  2019-12-19 12:15:18,871 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 395.577ms 200 application/x-javascript
+INFO  2019-12-19 12:15:18,938 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 399.8133ms 200 application/javascript
+INFO  2019-12-19 12:15:19,182 [20   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Order/load-product.js'. Physical path: 'C:\Users\Roshan\Documents\GitHub\ShopperAPI\ShopperCart\5.0.0\aspnet-core\src\ShopperCart.Web.Mvc\wwwroot\view-resources\Views\Order\load-product.js'
+INFO  2019-12-19 12:15:19,186 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 722.3049000000001ms 200 application/javascript
+INFO  2019-12-19 12:15:19,206 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-12-19 12:15:19,221 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2019-12-19 12:15:19,246 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2019-12-19 12:15:19,252 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=iVIuUPqfd_wB_oj6QTC3VA  
+INFO  2019-12-19 12:15:19,263 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 60.680600000000005ms 200 application/json
+INFO  2019-12-19 12:15:19,288 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2019-12-19 12:15:19,386 [8    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"iVIuUPqfd_wB_oj6QTC3VA","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2019-12-19T12:15:19.3861038+05:30","Properties":{}}
+DEBUG 2019-12-19 12:15:19,387 [8    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: iVIuUPqfd_wB_oj6QTC3VA
+DEBUG 2019-12-19 12:15:22,795 [15   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-19 12:15:23,385 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/product/GetProductById/2  
+INFO  2019-12-19 12:15:23,409 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ShopperCart.Web.Mvc.Controllers.ProductController.GetProductById (ShopperCart.Web.Mvc)'
+INFO  2019-12-19 12:15:23,417 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetProductById", controller = "Product", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult GetProductById(Int32) on controller ShopperCart.Web.Mvc.Controllers.ProductController (ShopperCart.Web.Mvc).
+DEBUG 2019-12-19 12:15:23,550 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Product, Id:2
+INFO  2019-12-19 12:15:23,653 [4    ] tonsoftJson.NewtonsoftJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-19 12:15:23,678 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action ShopperCart.Web.Mvc.Controllers.ProductController.GetProductById (ShopperCart.Web.Mvc) in 245.2579ms
+INFO  2019-12-19 12:15:23,683 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ShopperCart.Web.Mvc.Controllers.ProductController.GetProductById (ShopperCart.Web.Mvc)'
+INFO  2019-12-19 12:15:23,692 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 329.0374ms 200 application/json; charset=utf-8
+DEBUG 2019-12-19 12:15:27,998 [15   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-19 12:15:28,261 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/product/GetProductById/3  
+INFO  2019-12-19 12:15:28,278 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ShopperCart.Web.Mvc.Controllers.ProductController.GetProductById (ShopperCart.Web.Mvc)'
+INFO  2019-12-19 12:15:28,285 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetProductById", controller = "Product", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult GetProductById(Int32) on controller ShopperCart.Web.Mvc.Controllers.ProductController (ShopperCart.Web.Mvc).
+DEBUG 2019-12-19 12:15:28,391 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Product, Id:3
+INFO  2019-12-19 12:15:28,709 [24   ] tonsoftJson.NewtonsoftJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-19 12:15:28,718 [24   ] c.Infrastructure.ControllerActionInvoker - Executed action ShopperCart.Web.Mvc.Controllers.ProductController.GetProductById (ShopperCart.Web.Mvc) in 426.1725ms
+INFO  2019-12-19 12:15:28,722 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ShopperCart.Web.Mvc.Controllers.ProductController.GetProductById (ShopperCart.Web.Mvc)'
+INFO  2019-12-19 12:15:28,727 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 467.85290000000003ms 200 application/json; charset=utf-8
+DEBUG 2019-12-19 12:15:33,170 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:15:38,369 [15   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:15:43,755 [15   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:15:48,801 [15   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:16:11,890 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:18:42,427 [27   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: iVIuUPqfd_wB_oj6QTC3VA
+INFO  2019-12-19 12:18:42,433 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-12-19 12:18:42,469 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2019-12-19 12:18:42,496 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 203232.44410000002ms 101 
+INFO  2019-12-19 12:18:42,500 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2019-12-19 12:18:42,647 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2019-12-19 12:18:42,693 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 250.985ms 200 application/json
+INFO  2019-12-19 12:18:42,785 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=7HT5puFufV3EBkV-zc-R0g  
+DEBUG 2019-12-19 12:18:42,811 [15   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-19 12:18:42,849 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2019-12-19 12:18:43,052 [33   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"7HT5puFufV3EBkV-zc-R0g","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2019-12-19T12:18:43.0317421+05:30","Properties":{}}
+DEBUG 2019-12-19 12:18:48,768 [15   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:18:54,572 [15   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:19:00,929 [15   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:19:06,329 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:19:11,757 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:19:16,820 [19   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:19:21,831 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:19:26,867 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:19:31,899 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:19:37,296 [19   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:19:42,522 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:19:47,570 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:19:52,584 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:19:57,594 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:20:02,614 [27   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:20:07,633 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:20:12,655 [27   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:20:18,017 [28   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:20:24,418 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:20:29,511 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:20:34,524 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:20:39,561 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:20:44,632 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:20:49,651 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:20:54,671 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:20:59,692 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:21:04,728 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:21:09,748 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:21:14,769 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:21:19,791 [27   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:21:24,824 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:21:29,847 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:21:34,863 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:21:39,890 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:21:44,908 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:21:49,938 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:21:54,962 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:21:59,973 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:22:04,981 [19   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:22:09,997 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:22:15,011 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:22:20,027 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:22:25,043 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-19 12:22:26,737 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/Order  
+INFO  2019-12-19 12:22:26,756 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'ShopperCart.Web.Mvc.Controllers.OrderController.Index (ShopperCart.Web.Mvc)'
+INFO  2019-12-19 12:22:26,773 [29   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Order", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ShopperCart.Web.Mvc.Controllers.OrderController (ShopperCart.Web.Mvc).
+DEBUG 2019-12-19 12:22:26,847 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:6
+DEBUG 2019-12-19 12:22:26,847 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Customer, Id:1
+DEBUG 2019-12-19 12:22:26,848 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:17
+DEBUG 2019-12-19 12:22:26,848 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Product, Id:3
+DEBUG 2019-12-19 12:22:26,848 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:8
+DEBUG 2019-12-19 12:22:26,848 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:8
+DEBUG 2019-12-19 12:22:26,848 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Product, Id:2
+DEBUG 2019-12-19 12:22:26,849 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:18
+DEBUG 2019-12-19 12:22:26,849 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Product, Id:5
+DEBUG 2019-12-19 12:22:26,849 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:19
+DEBUG 2019-12-19 12:22:26,849 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Product, Id:4
+DEBUG 2019-12-19 12:22:26,849 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:20
+DEBUG 2019-12-19 12:22:26,850 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:10
+DEBUG 2019-12-19 12:22:26,850 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:11
+DEBUG 2019-12-19 12:22:26,850 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:12
+DEBUG 2019-12-19 12:22:26,850 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:11
+DEBUG 2019-12-19 12:22:26,850 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:15
+DEBUG 2019-12-19 12:22:26,850 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:12
+DEBUG 2019-12-19 12:22:26,850 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:16
+DEBUG 2019-12-19 12:22:26,850 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:13
+DEBUG 2019-12-19 12:22:26,851 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:21
+DEBUG 2019-12-19 12:22:26,851 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:14
+DEBUG 2019-12-19 12:22:26,851 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:22
+DEBUG 2019-12-19 12:22:26,851 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:15
+DEBUG 2019-12-19 12:22:26,851 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:23
+DEBUG 2019-12-19 12:22:26,851 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:16
+DEBUG 2019-12-19 12:22:26,851 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:24
+DEBUG 2019-12-19 12:22:26,851 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:25
+DEBUG 2019-12-19 12:22:26,851 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:17
+DEBUG 2019-12-19 12:22:26,851 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:26
+DEBUG 2019-12-19 12:22:26,851 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:18
+DEBUG 2019-12-19 12:22:26,851 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:27
+DEBUG 2019-12-19 12:22:26,851 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:19
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:28
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:20
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:29
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:21
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:30
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:22
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:31
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:23
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:32
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:24
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:33
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:25
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:34
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:26
+DEBUG 2019-12-19 12:22:26,852 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:35
+DEBUG 2019-12-19 12:22:26,853 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:27
+DEBUG 2019-12-19 12:22:26,853 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:36
+DEBUG 2019-12-19 12:22:26,853 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.Order, Id:28
+DEBUG 2019-12-19 12:22:26,853 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:37
+DEBUG 2019-12-19 12:22:26,853 [29   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Models.OrderLine, Id:38
+INFO  2019-12-19 12:22:26,938 [27   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-12-19 12:22:26,962 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,963 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,964 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,965 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,966 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,968 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,968 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,969 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,970 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,971 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,971 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,972 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,973 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,974 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,975 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,976 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,977 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,979 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,979 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,980 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+WARN  2019-12-19 12:22:26,981 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Remove' in localization source 'ShopperCart'!
+DEBUG 2019-12-19 12:22:27,028 [27   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for ShopperCart.Authorization.Users.User, Id:5
+DEBUG 2019-12-19 12:22:27,090 [33   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 7HT5puFufV3EBkV-zc-R0g
+INFO  2019-12-19 12:22:27,090 [27   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 164.1686ms.
+INFO  2019-12-19 12:22:27,098 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2019-12-19 12:22:27,101 [27   ] c.Infrastructure.ControllerActionInvoker - Executed action ShopperCart.Web.Mvc.Controllers.OrderController.Index (ShopperCart.Web.Mvc) in 323.39910000000003ms
+INFO  2019-12-19 12:22:27,104 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 224370.0551ms 101 
+INFO  2019-12-19 12:22:27,112 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'ShopperCart.Web.Mvc.Controllers.OrderController.Index (ShopperCart.Web.Mvc)'
+INFO  2019-12-19 12:22:27,116 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 380.04490000000004ms 200 text/html; charset=utf-8
+INFO  2019-12-19 12:22:27,207 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637123544172624952  
+INFO  2019-12-19 12:22:27,211 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637123544172624952  
+INFO  2019-12-19 12:22:27,223 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-19 12:22:27,225 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-19 12:22:27,230 [27   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2019-12-19 12:22:27,233 [33   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2019-12-19 12:22:27,250 [27   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-12-19 12:22:27,299 [27   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 21.951ms
+INFO  2019-12-19 12:22:27,347 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-19 12:22:27,356 [33   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-12-19 12:22:27,364 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 148.1275ms 200 application/x-javascript
+INFO  2019-12-19 12:22:27,388 [33   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 131.19910000000002ms
+INFO  2019-12-19 12:22:27,403 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-19 12:22:27,422 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 199.2456ms 200 application/x-javascript; charset=utf-8
+INFO  2019-12-19 12:22:27,442 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-12-19 12:22:27,457 [34   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2019-12-19 12:22:27,466 [34   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2019-12-19 12:22:27,485 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 29.9276ms 200 application/json
+INFO  2019-12-19 12:22:27,489 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
+INFO  2019-12-19 12:22:27,501 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=sxJo68ac1_puXYk5h7k1TA  
+INFO  2019-12-19 12:22:27,518 [34   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2019-12-19 12:22:27,536 [32   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"sxJo68ac1_puXYk5h7k1TA","IpAddress":"::1","TenantId":null,"UserId":5,"ConnectTime":"2019-12-19T12:22:27.5360662+05:30","Properties":{}}
+DEBUG 2019-12-19 12:22:27,537 [32   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: sxJo68ac1_puXYk5h7k1TA
+INFO  2019-12-19 12:22:27,549 [27   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Roshan\Documents\GitHub\ShopperAPI\ShopperCart\5.0.0\aspnet-core\src\ShopperCart.Web.Mvc\wwwroot\favicon.ico'
+INFO  2019-12-19 12:22:27,553 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 65.8206ms 200 image/x-icon
+DEBUG 2019-12-19 12:22:30,058 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:22:35,081 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-19 12:22:40,087 [29   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null

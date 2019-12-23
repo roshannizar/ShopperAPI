@@ -20,16 +20,14 @@ namespace ShopperCart.Order
     {
         private readonly IRepository<Models.Order> orderRepository;
         private readonly IUnitOfWork unitOfWork;
-        private readonly IRepository<Models.OrderLine> orderItemRepository;
         private readonly ProductService productService;
         private readonly IMapper mapper;
 
         public OrderService(IRepository<Models.Order> orderRepository, IRepository<Models.Product> productRepository
-            , IUnitOfWork unitOfWork, IRepository<Models.OrderLine> orderItemRepository, IMapper mapper)
+            , IUnitOfWork unitOfWork, IMapper mapper)
         {
             this.orderRepository = orderRepository;
             this.unitOfWork = unitOfWork;
-            this.orderItemRepository = orderItemRepository;
             this.mapper = mapper;
             productService = new ProductService(productRepository, mapper, unitOfWork);
         }
@@ -44,8 +42,8 @@ namespace ShopperCart.Order
                     await productService.Update(item.ProductId, -(item.Quantity));
                 }
 
-                OrderDto orderDtoTemp = new OrderDto(orderDto.CustomerId, orderDto.Date, orderDto.OrderItems, orderDto.Status);
-                var order = mapper.Map<Models.Order>(orderDtoTemp);
+                //OrderDto orderDtoTemp = new OrderDto(orderDto.CustomerId, orderDto.Date, orderDto.OrderItems, orderDto.Status);
+                var order = mapper.Map<Models.Order>(orderDto);
                 //This method will add orderlines as well, since this entity has the orderline list
                 await orderRepository.InsertAsync(order);
                 await unitOfWork.SaveChangesAsync();
